@@ -10,4 +10,12 @@ public class Player : MonoBehaviour
     public bool[] availableCardSlots;
     public bool hasDrawnCard = false;
     public bool hasRolledDice = false;
+
+    private void Start()
+    {
+        foreach (var card in deck)
+        {
+            card.player = this;
+        }
+    }
 }

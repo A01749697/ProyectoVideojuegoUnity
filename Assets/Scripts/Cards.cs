@@ -7,7 +7,7 @@ public class Cards : MonoBehaviour
     public int handIndex;
     public bool cardOnHand;
     public Player player;
-    // Start is called before the first frame update
+    
     private void OnMouseDown()
     {
         player.availableCardSlots[handIndex] = true;
