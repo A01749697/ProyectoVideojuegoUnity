@@ -7,7 +7,7 @@ public class Path : MonoBehaviour
     public Transform[] waypoints;
     
     [SerializeField]
-    private float moveSpeed = 3f;
+    private float moveSpeed = 2f;
 
     [HideInInspector]
     public int waypointIndex = 0;
