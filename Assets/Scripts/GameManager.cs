@@ -36,7 +36,9 @@ public class GameManager : MonoBehaviour
             if(currentPlayer.availableCardSlots[i]){
                 randCard.handIndex = i;
                 randCard.transform.position = currentPlayer.cardSlots[i].position;
+                Debug.Log(randCard.transform.position);
                 randCard.transform.rotation = currentPlayer.cardSlots[i].rotation;
+                Debug.Log(randCard.transform.rotation);
                 currentPlayer.availableCardSlots[i] = false;
                 break;
             }
