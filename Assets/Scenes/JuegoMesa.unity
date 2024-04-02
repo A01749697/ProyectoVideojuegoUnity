@@ -481,6 +481,7 @@ GameObject:
   - component: {fileID: 225350042}
   - component: {fileID: 225350041}
   - component: {fileID: 225350043}
+  - component: {fileID: 225350044}
   m_Layer: 0
   m_Name: Player3
   m_TagString: Untagged
@@ -606,6 +607,19 @@ MonoBehaviour:
   availableCardSlots: 010101
   hasDrawnCard: 0
   hasRolledDice: 0
+--- !u!114 &225350044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 225350039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 856620f6ecf83d94f8fe96d665a74978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 0}
 --- !u!1 &227641300
 GameObject:
   m_ObjectHideFlags: 0
@@ -1791,6 +1805,7 @@ GameObject:
   - component: {fileID: 758212747}
   - component: {fileID: 758212746}
   - component: {fileID: 758212748}
+  - component: {fileID: 758212749}
   m_Layer: 0
   m_Name: Player1
   m_TagString: Untagged
@@ -1916,6 +1931,19 @@ MonoBehaviour:
   availableCardSlots: 010101
   hasDrawnCard: 0
   hasRolledDice: 0
+--- !u!114 &758212749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758212744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 856620f6ecf83d94f8fe96d665a74978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 0}
 --- !u!1 &765937949
 GameObject:
   m_ObjectHideFlags: 0
@@ -2818,6 +2846,7 @@ GameObject:
   - component: {fileID: 1145946323}
   - component: {fileID: 1145946322}
   - component: {fileID: 1145946324}
+  - component: {fileID: 1145946325}
   m_Layer: 0
   m_Name: Player2
   m_TagString: Untagged
@@ -2943,6 +2972,19 @@ MonoBehaviour:
   availableCardSlots: 010101
   hasDrawnCard: 0
   hasRolledDice: 0
+--- !u!114 &1145946325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1145946320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 856620f6ecf83d94f8fe96d665a74978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 0}
 --- !u!1 &1216021678
 GameObject:
   m_ObjectHideFlags: 0
@@ -3523,10 +3565,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 225350040}
-  - {fileID: 1826341449}
   - {fileID: 758212745}
   - {fileID: 1145946321}
+  - {fileID: 225350040}
+  - {fileID: 1826341449}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1444290699
@@ -4852,6 +4894,7 @@ GameObject:
   - component: {fileID: 1826341451}
   - component: {fileID: 1826341450}
   - component: {fileID: 1826341452}
+  - component: {fileID: 1826341453}
   m_Layer: 0
   m_Name: Player4
   m_TagString: Untagged
@@ -4977,6 +5020,19 @@ MonoBehaviour:
   availableCardSlots: 010101
   hasDrawnCard: 0
   hasRolledDice: 0
+--- !u!114 &1826341453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1826341448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 856620f6ecf83d94f8fe96d665a74978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 0}
 --- !u!1 &1838722766
 GameObject:
   m_ObjectHideFlags: 0
