@@ -78,10 +78,9 @@ public class GameManager : MonoBehaviour
             while (!currentPlayer.hasDrawnCard || !currentPlayer.hasRolledDice)
             {
 
-                yield return null; // wait for next frame
+                yield return null;
             }
 
-            // Move to the next player
             currentPlayerIndex = (currentPlayerIndex + 1) % players.Length;
         }
     }

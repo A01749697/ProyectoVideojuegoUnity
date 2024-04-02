@@ -16,7 +16,7 @@ public class Path : MonoBehaviour
 
     void Start()
     {
-        transform.position = new Vector2(5.04f,-0.59f);
+        transform.position = new Vector2(5f,-0.59f);
     }
 
     void Update()
