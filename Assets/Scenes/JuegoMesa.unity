@@ -482,6 +482,7 @@ GameObject:
   - component: {fileID: 225350041}
   - component: {fileID: 225350043}
   - component: {fileID: 225350044}
+  - component: {fileID: 225350045}
   m_Layer: 0
   m_Name: Player3
   m_TagString: Untagged
@@ -567,7 +568,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -6436558563129841297, guid: 641f95b94a5829741be5bbfb64b3f6df, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -620,6 +621,46 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
+--- !u!114 &225350045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 225350039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a13a6ff30a520543950e5258c9c0094, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {fileID: 765937950}
+  - {fileID: 668740057}
+  - {fileID: 2107898955}
+  - {fileID: 999667468}
+  - {fileID: 1285086524}
+  - {fileID: 656389978}
+  - {fileID: 1683248288}
+  - {fileID: 1303861675}
+  - {fileID: 733485700}
+  - {fileID: 1861599148}
+  - {fileID: 1291630302}
+  - {fileID: 745044463}
+  - {fileID: 1838722767}
+  - {fileID: 1635302090}
+  - {fileID: 1943649242}
+  - {fileID: 888056825}
+  - {fileID: 1548358877}
+  - {fileID: 445715528}
+  - {fileID: 1447179867}
+  - {fileID: 1045090518}
+  - {fileID: 1068443224}
+  - {fileID: 1235269619}
+  - {fileID: 959068488}
+  - {fileID: 2043610467}
+  moveSpeed: 2
+  waypointIndex: 0
+  moveAllowed: 0
 --- !u!1 &227641300
 GameObject:
   m_ObjectHideFlags: 0
@@ -1806,6 +1847,7 @@ GameObject:
   - component: {fileID: 758212746}
   - component: {fileID: 758212748}
   - component: {fileID: 758212749}
+  - component: {fileID: 758212750}
   m_Layer: 0
   m_Name: Player1
   m_TagString: Untagged
@@ -1891,7 +1933,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: 457926520, guid: fe673588b4a3e164bb0dc7a27a736301, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1944,6 +1986,46 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
+--- !u!114 &758212750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758212744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a13a6ff30a520543950e5258c9c0094, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {fileID: 765937950}
+  - {fileID: 668740057}
+  - {fileID: 2107898955}
+  - {fileID: 999667468}
+  - {fileID: 1285086524}
+  - {fileID: 656389978}
+  - {fileID: 1683248288}
+  - {fileID: 1303861675}
+  - {fileID: 733485700}
+  - {fileID: 1861599148}
+  - {fileID: 1291630302}
+  - {fileID: 745044463}
+  - {fileID: 1838722767}
+  - {fileID: 1635302090}
+  - {fileID: 1943649242}
+  - {fileID: 888056825}
+  - {fileID: 1548358877}
+  - {fileID: 445715528}
+  - {fileID: 1447179867}
+  - {fileID: 1045090518}
+  - {fileID: 1068443224}
+  - {fileID: 1235269619}
+  - {fileID: 959068488}
+  - {fileID: 2043610467}
+  moveSpeed: 2
+  waypointIndex: 0
+  moveAllowed: 0
 --- !u!1 &765937949
 GameObject:
   m_ObjectHideFlags: 0
@@ -2847,6 +2929,7 @@ GameObject:
   - component: {fileID: 1145946322}
   - component: {fileID: 1145946324}
   - component: {fileID: 1145946325}
+  - component: {fileID: 1145946326}
   m_Layer: 0
   m_Name: Player2
   m_TagString: Untagged
@@ -2932,7 +3015,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: -1733085498, guid: fe673588b4a3e164bb0dc7a27a736301, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2985,6 +3068,46 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
+--- !u!114 &1145946326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1145946320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a13a6ff30a520543950e5258c9c0094, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {fileID: 765937950}
+  - {fileID: 668740057}
+  - {fileID: 2107898955}
+  - {fileID: 999667468}
+  - {fileID: 1285086524}
+  - {fileID: 656389978}
+  - {fileID: 1683248288}
+  - {fileID: 1303861675}
+  - {fileID: 733485700}
+  - {fileID: 1861599148}
+  - {fileID: 1291630302}
+  - {fileID: 745044463}
+  - {fileID: 1838722767}
+  - {fileID: 1635302090}
+  - {fileID: 1943649242}
+  - {fileID: 888056825}
+  - {fileID: 1548358877}
+  - {fileID: 445715528}
+  - {fileID: 1447179867}
+  - {fileID: 1045090518}
+  - {fileID: 1068443224}
+  - {fileID: 1235269619}
+  - {fileID: 959068488}
+  - {fileID: 2043610467}
+  moveSpeed: 2
+  waypointIndex: 0
+  moveAllowed: 0
 --- !u!1 &1216021678
 GameObject:
   m_ObjectHideFlags: 0
@@ -4895,6 +5018,7 @@ GameObject:
   - component: {fileID: 1826341450}
   - component: {fileID: 1826341452}
   - component: {fileID: 1826341453}
+  - component: {fileID: 1826341454}
   m_Layer: 0
   m_Name: Player4
   m_TagString: Untagged
@@ -4980,7 +5104,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 2636948708909060737, guid: 641f95b94a5829741be5bbfb64b3f6df, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5033,6 +5157,46 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
+--- !u!114 &1826341454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1826341448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a13a6ff30a520543950e5258c9c0094, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {fileID: 765937950}
+  - {fileID: 668740057}
+  - {fileID: 2107898955}
+  - {fileID: 999667468}
+  - {fileID: 1285086524}
+  - {fileID: 656389978}
+  - {fileID: 1683248288}
+  - {fileID: 1303861675}
+  - {fileID: 733485700}
+  - {fileID: 1861599148}
+  - {fileID: 1291630302}
+  - {fileID: 745044463}
+  - {fileID: 1838722767}
+  - {fileID: 1635302090}
+  - {fileID: 1943649242}
+  - {fileID: 888056825}
+  - {fileID: 1548358877}
+  - {fileID: 445715528}
+  - {fileID: 1447179867}
+  - {fileID: 1045090518}
+  - {fileID: 1068443224}
+  - {fileID: 1235269619}
+  - {fileID: 959068488}
+  - {fileID: 2043610467}
+  moveSpeed: 2
+  waypointIndex: 0
+  moveAllowed: 0
 --- !u!1 &1838722766
 GameObject:
   m_ObjectHideFlags: 0
