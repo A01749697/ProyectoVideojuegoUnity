@@ -73,6 +73,26 @@ public class GameManager : MonoBehaviour
             currentPlayer.hasDrawnCard = false;
             currentPlayer.hasRolledDice = false;
 
+            //Ocult the cards of all the players which are not the current player
+            foreach (GameObject playerObject in players)
+            {
+                Player player = playerObject.GetComponent<Player>();
+                foreach (Cards card in player.deck)
+                {
+                    // If the player is not the current player, hide their cards that are in hand
+                    if (player != currentPlayer && card.cardOnHand)
+                    {
+                        card.gameObject.SetActive(false);
+                    }
+                    // Otherwise, make sure their cards in hand are visible
+                    else if (card.cardOnHand)
+                    {
+                        card.gameObject.SetActive(true);
+                    }
+                }
+            }
+
+
             while (!currentPlayer.hasDrawnCard || !currentPlayer.hasRolledDice)
             {
 
