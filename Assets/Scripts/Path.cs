@@ -14,12 +14,12 @@ public class Path : MonoBehaviour
     public bool moveAllowed = false;
     private bool coroutineAllowed = true;
 
-    void Start()
+    public void Start()
     {
         transform.position = new Vector2(5f,-0.59f);
     }
 
-    void Update()
+    public void Update()
     {
         if(moveAllowed && coroutineAllowed){
             StartCoroutine(Move());

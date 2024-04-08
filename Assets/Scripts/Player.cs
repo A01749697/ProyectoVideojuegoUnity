@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
     public bool hasDrawnCard = false;
     public bool hasRolledDice = false;
 
-    private void Start()
+    public void Start()
     {
         foreach (var card in deck)
         {

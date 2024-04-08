@@ -9,9 +9,19 @@ public class GameManager : MonoBehaviour
 {
     public static GameObject[] players;
     public static Player currentPlayer;
+    public static bool modoTirarCarta = false;
     public static int currentPlayerIndex = 0;
     public static int diceSideThrown = 0;
     public static bool gameOver = false;
+
+    public void TirarCarta(int playerIndex){
+    // Check if the current player is the one who clicked the button
+        if (currentPlayerIndex != playerIndex) {
+            Debug.Log("It's not your turn!");
+            return;
+        }
+    modoTirarCarta = !modoTirarCarta;
+}
 
     public void DrawCard(){   
         if (currentPlayer.hasDrawnCard) {
@@ -44,7 +54,9 @@ public class GameManager : MonoBehaviour
         currentPlayer.hasDrawnCard = true;
     }
 
-    void Start()
+
+
+    public void Start()
     {
         players = new GameObject[4];
         players[0] = GameObject.Find("Player1");
