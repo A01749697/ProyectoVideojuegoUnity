@@ -14,14 +14,13 @@ public class GameManager : MonoBehaviour
     public static int diceSideThrown = 0;
     public static bool gameOver = false;
 
-    public void TirarCarta(int playerIndex){
-    // Check if the current player is the one who clicked the button
-        if (currentPlayerIndex != playerIndex) {
-            Debug.Log("It's not your turn!");
+    public void TirarCarta(){
+        if (currentPlayer.hasThrownCard) {
+            Debug.Log("Player has already drawn a card this turn.");
             return;
         }
-    modoTirarCarta = !modoTirarCarta;
-}
+        currentPlayer.hasDrawnCard = true;
+    }
 
     public void DrawCard(){   
         if (currentPlayer.hasDrawnCard) {
@@ -53,8 +52,6 @@ public class GameManager : MonoBehaviour
         }
         currentPlayer.hasDrawnCard = true;
     }
-
-
 
     public void Start()
     {
@@ -105,9 +102,8 @@ public class GameManager : MonoBehaviour
             }
 
 
-            while (!currentPlayer.hasDrawnCard || !currentPlayer.hasRolledDice)
+            while (!currentPlayer.hasRolledDice && (!currentPlayer.hasThrownCard || !currentPlayer.hasDrawnCard))
             {
-
                 yield return null;
             }
 
