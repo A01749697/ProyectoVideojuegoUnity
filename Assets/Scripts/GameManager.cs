@@ -9,9 +9,18 @@ public class GameManager : MonoBehaviour
 {
     public static GameObject[] players;
     public static Player currentPlayer;
+    public static bool modoTirarCarta = false;
     public static int currentPlayerIndex = 0;
     public static int diceSideThrown = 0;
     public static bool gameOver = false;
+
+    public void TirarCarta(){
+        if (currentPlayer.hasThrownCard) {
+            Debug.Log("Player has already drawn a card this turn.");
+            return;
+        }
+        currentPlayer.hasDrawnCard = true;
+    }
 
     public void DrawCard(){   
         if (currentPlayer.hasDrawnCard) {
@@ -44,7 +53,7 @@ public class GameManager : MonoBehaviour
         currentPlayer.hasDrawnCard = true;
     }
 
-    void Start()
+    public void Start()
     {
         players = new GameObject[4];
         players[0] = GameObject.Find("Player1");
@@ -73,13 +82,31 @@ public class GameManager : MonoBehaviour
             currentPlayer.hasDrawnCard = false;
             currentPlayer.hasRolledDice = false;
 
-            while (!currentPlayer.hasDrawnCard || !currentPlayer.hasRolledDice)
+            //Ocult the cards of all the players which are not the current player
+            foreach (GameObject playerObject in players)
             {
-
-                yield return null; // wait for next frame
+                Player player = playerObject.GetComponent<Player>();
+                foreach (Cards card in player.deck)
+                {
+                    // If the player is not the current player, hide their cards that are in hand
+                    if (player != currentPlayer && card.cardOnHand)
+                    {
+                        card.gameObject.SetActive(false);
+                    }
+                    // Otherwise, make sure their cards in hand are visible
+                    else if (card.cardOnHand)
+                    {
+                        card.gameObject.SetActive(true);
+                    }
+                }
             }
 
-            // Move to the next player
+
+            while (!currentPlayer.hasRolledDice && (!currentPlayer.hasThrownCard || !currentPlayer.hasDrawnCard))
+            {
+                yield return null;
+            }
+
             currentPlayerIndex = (currentPlayerIndex + 1) % players.Length;
         }
     }
