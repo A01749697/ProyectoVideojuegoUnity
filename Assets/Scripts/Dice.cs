@@ -12,6 +12,7 @@ public class Dice : MonoBehaviour
     private Sprite[] ladoDado;
     private Sprite[] animDado;
     private SpriteRenderer spriteRenderer;
+    public AudioSource audioSource; //
 
 
     void Start()
@@ -19,6 +20,7 @@ public class Dice : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         ladoDado = new Sprite[6];
         animDado = new Sprite[6];
+        audioSource = GetComponent<AudioSource>(); //
         for (int i = 0; i < 6; i++){
             string path = $"Assets/Sprites/Dados/dado{i + 1}.png";
             string path2 = $"Assets/Sprites/Dados/anim{i + 1}.png";
@@ -37,6 +39,7 @@ public class Dice : MonoBehaviour
     private IEnumerator RollTheDice()
     {
         int randomDiceSide = 0;
+        audioSource.Play(); //
         for(int i = 0; i <= 10; i++){
             randomDiceSide = Random.Range(0, 6);
             spriteRenderer.sprite = animDado[randomDiceSide];

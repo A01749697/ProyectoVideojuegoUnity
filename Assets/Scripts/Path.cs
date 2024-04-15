@@ -5,7 +5,9 @@ using UnityEngine;
 public class Path : MonoBehaviour
 {
     public Transform[] waypoints;
-    
+    public AudioClip footstepsSound; // Variable para almacenar el audio de pisadas
+    private AudioSource audioSource; // Variable para el AudioSource
+
     [SerializeField]
     private float moveSpeed = 2f;
 
@@ -17,6 +19,7 @@ public class Path : MonoBehaviour
     public void Start()
     {
         transform.position = new Vector2(5f,-0.59f);
+        audioSource = GetComponent<AudioSource>(); // Obtener el AudioSource del personaje
     }
 
     public void Update()
@@ -34,6 +37,12 @@ public class Path : MonoBehaviour
             {
                 transform.position = Vector2.MoveTowards(transform.position,
                 waypoints[waypointIndex].transform.position, moveSpeed * Time.deltaTime);
+                // Reproducir el sonido de pisadas mientras el personaje se mueve
+                if (!audioSource.isPlaying && footstepsSound != null)
+                {
+                    audioSource.clip = footstepsSound;
+                    audioSource.Play();
+                }
                 yield return null;
             }
             waypointIndex++;
@@ -42,3 +51,4 @@ public class Path : MonoBehaviour
         coroutineAllowed = true;
     }
 }
+
