@@ -21,7 +21,7 @@ public class SoundManager : MonoBehaviour
     }
 
    public void ChangeVolume(){
-    audioSource.volume = volumeSlider.value; //valor del volumen= valor del slider //AudioListener es global, volumen de cada audio source
+    audioSource.volume = volumeSlider.value; 
     Save(); 
    }
 
@@ -30,7 +30,6 @@ public class SoundManager : MonoBehaviour
    }
 
    private void Save(){
-   	//playerpref preferencias del jugador en la sección de configuración del juego
-   	PlayerPrefs.SetFloat(/*KeyName*/"musicVolume", /*Valor*/ volumeSlider.value);
+   	PlayerPrefs.SetFloat("musicVolume", volumeSlider.value);
    }
 }
