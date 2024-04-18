@@ -13,10 +13,15 @@ public class Cards : MonoBehaviour
     private int tipoCarta;
     private SpriteRenderer spriteRenderer;
     private Coroutine colorChangeCoroutine;
+    private AudioSource AudioSource;
 
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        AudioSource = GetComponent<AudioSource>();
+        if (AudioSource == null){
+            AudioSource = gameObject.AddComponent<AudioSource>();
+        }
     }
 
     public void OnMouseDown()
@@ -30,6 +35,10 @@ public class Cards : MonoBehaviour
         else if (tipoCarta == 1)
         {
             Debug.Log("El jugador jugo una plaga");
+        }
+
+        if(AudioSource != null && AudioSource.clip != null){
+            AudioSource.Play();
         }
         
         player.availableCardSlots[handIndex] = true;
