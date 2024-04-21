@@ -11,6 +11,7 @@ public class Player : MonoBehaviour
     public bool hasDrawnCard = false;
     public bool hasThrownCard = false;
     public bool hasRolledDice = false;
+    public bool hasPlayedCard = false;
 
     public void Start()
     {

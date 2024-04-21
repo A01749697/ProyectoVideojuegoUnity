@@ -26,6 +26,10 @@ public class Cards : MonoBehaviour
 
     public void OnMouseDown()
     {
+        if (player.hasPlayedCard)
+        {
+            return;
+        }
 
         //Si el tipo de carta es de tipo "crop", imprimir "El jugador jugo un cultivo"
         if (tipoCarta == 0)
@@ -42,6 +46,7 @@ public class Cards : MonoBehaviour
         }
         
         player.availableCardSlots[handIndex] = true;
+        player.hasPlayedCard = true;
         transform.position = new Vector3(7.6f, -1.75f, 0);
         cardOnHand = false;
     }
@@ -56,7 +61,7 @@ public class Cards : MonoBehaviour
         {
             StopCoroutine(colorChangeCoroutine);
             colorChangeCoroutine = null;
-            spriteRenderer.color = Color.white; // Reset to white when stopping
+            spriteRenderer.color = Color.white;
         }
     }
 

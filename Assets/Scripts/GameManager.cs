@@ -79,8 +79,11 @@ public class GameManager : MonoBehaviour
         while (!gameOver)
         {
             currentPlayer = players[currentPlayerIndex].GetComponent<Player>();
+            Debug.Log("Current player has changed to: " + currentPlayer.name); 
             currentPlayer.hasDrawnCard = false;
             currentPlayer.hasRolledDice = false;
+            currentPlayer.hasThrownCard = false;
+            currentPlayer.hasPlayedCard = false;
 
             //Ocult the cards of all the players which are not the current player
             foreach (GameObject playerObject in players)
@@ -102,8 +105,8 @@ public class GameManager : MonoBehaviour
             }
 
 
-            while (!currentPlayer.hasRolledDice && (!currentPlayer.hasThrownCard || !currentPlayer.hasDrawnCard))
-            {
+            while (!currentPlayer.hasPlayedCard || !currentPlayer.hasRolledDice || !(currentPlayer.hasThrownCard || currentPlayer.hasDrawnCard))
+            { 
                 yield return null;
             }
 

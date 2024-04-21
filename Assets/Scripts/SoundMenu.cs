@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class SoundMenu : MonoBehaviour
 {
-    public AudioSource audio;
+    public AudioSource audioSound;
     public void playButton()
     {
-    	audio.Play();
+    	audioSound.Play();
     }
 }
