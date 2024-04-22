@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public static int currentPlayerIndex = 0;
     public static int diceSideThrown = 0;
     public static bool gameOver = false;
+    public TurnAnnouncement TurnAnnouncement;
 
     public void TirarCarta(){
         if (currentPlayer.hasThrownCard) {
@@ -81,6 +82,11 @@ public class GameManager : MonoBehaviour
             currentPlayer = players[currentPlayerIndex].GetComponent<Player>();
             currentPlayer.hasDrawnCard = false;
             currentPlayer.hasRolledDice = false;
+
+            //Display turn
+            if (TurnAnnouncement != null){
+                TurnAnnouncement.DisplayTurn(currentPlayer.name);
+            }
 
             //Ocult the cards of all the players which are not the current player
             foreach (GameObject playerObject in players)
