@@ -20,4 +20,6 @@ public class Player : MonoBehaviour
             card.player = this;
         }
     }
+
+    
 }
