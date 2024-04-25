@@ -32,11 +32,15 @@ public class Path : MonoBehaviour
     private IEnumerator Move(){
         coroutineAllowed = false;
         for(int i=0; i < GameManager.diceSideThrown; i++){
-            if(waypointIndex == 23){waypointIndex = 0;}            
+            if(waypointIndex == 23){
+                waypointIndex = 0;
+                HudGame.instance.UpdatePlayerInformationUI(Dice.playerIndex, waypointIndex);
+            }            
             while ((Vector2)transform.position != (Vector2)waypoints[waypointIndex].transform.position)
             {
                 transform.position = Vector2.MoveTowards(transform.position,
                 waypoints[waypointIndex].transform.position, moveSpeed * Time.deltaTime);
+
                 // Reproducir el sonido de pisadas mientras el personaje se mueve
                 if (!audioSource.isPlaying && footstepsSound != null)
                 {
@@ -46,6 +50,7 @@ public class Path : MonoBehaviour
                 yield return null;
             }
             waypointIndex++;
+            HudGame.instance.UpdatePlayerInformationUI(Dice.playerIndex, waypointIndex);
         }
         moveAllowed = false;
         coroutineAllowed = true;

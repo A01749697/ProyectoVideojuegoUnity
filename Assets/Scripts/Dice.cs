@@ -8,7 +8,7 @@ using UnityEditor;
 #endif
 public class Dice : MonoBehaviour
 {
-    public int playerIndex=0;
+    static public int playerIndex=0;
     private Sprite[] ladoDado;
     private Sprite[] animDado;
     private SpriteRenderer spriteRenderer;
