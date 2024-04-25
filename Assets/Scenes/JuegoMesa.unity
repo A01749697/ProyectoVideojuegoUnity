@@ -448,7 +448,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a9aa3d33947dd942954a26c7e555034, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerIndex: 0
   audioSource: {fileID: 0}
 --- !u!61 &92832886
 BoxCollider2D:
@@ -7391,7 +7390,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60063db8355634622ae5f3e486eabbf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSound: {fileID: 0}
+  audioSound: {fileID: 1105355766}
 --- !u!1 &1138902206
 GameObject:
   m_ObjectHideFlags: 0
