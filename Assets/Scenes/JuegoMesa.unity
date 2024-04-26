@@ -216,7 +216,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &8296616
 Animator:
   serializedVersion: 5
@@ -298,12 +298,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8296615}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.7, y: -2, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -8.125771, y: -0.4714954, z: -0.054534953}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1079608578}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &10883898
 GameObject:
@@ -1029,7 +1029,7 @@ GameObject:
   - component: {fileID: 168652727}
   - component: {fileID: 168652728}
   m_Layer: 0
-  m_Name: polilla-amarilla
+  m_Name: plaga-amarilla
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1112,10 +1112,10 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.47, y: 3.1}
+  m_Size: {x: 2.0583334, y: 2.5833333}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!61 &168652727
@@ -1155,7 +1155,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 2.0583334, y: 2.5833333}
-    newSize: {x: 2.47, y: 3.1}
+    newSize: {x: 2.0583334, y: 2.5833333}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -1653,6 +1653,38 @@ Transform:
   - {fileID: 1398623690}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &257882135
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 257882136}
+  m_Layer: 0
+  m_Name: CultivosTrigo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &257882136
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257882135}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.5742296, y: -1.5285046, z: 0.054534953}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 263185572}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &263185569
 GameObject:
   m_ObjectHideFlags: 0
@@ -1752,12 +1784,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 263185569}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.9, y: -2, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -7.3257704, y: -0.4714954, z: -0.054534953}
   m_LocalScale: {x: 0.08, y: 0.08, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 257882136}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &293787158
 GameObject:
@@ -1773,7 +1805,7 @@ GameObject:
   - component: {fileID: 293787162}
   - component: {fileID: 293787163}
   m_Layer: 0
-  m_Name: frijol-rojo
+  m_Name: cultivo-rojo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1856,10 +1888,10 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.45, y: 3.08}
+  m_Size: {x: 2.0416667, y: 2.5666666}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!61 &293787162
@@ -1899,7 +1931,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 2.0416667, y: 2.5666666}
-    newSize: {x: 2.45, y: 3.08}
+    newSize: {x: 2.0416667, y: 2.5666666}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -2017,7 +2049,7 @@ GameObject:
   - component: {fileID: 294937145}
   - component: {fileID: 294937146}
   m_Layer: 0
-  m_Name: mosca-azul
+  m_Name: plaga-azul
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2100,10 +2132,10 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.47, y: 3.1}
+  m_Size: {x: 2.0583334, y: 2.5833333}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!61 &294937145
@@ -2143,7 +2175,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 2.0583334, y: 2.5833333}
-    newSize: {x: 2.47, y: 3.1}
+    newSize: {x: 2.0583334, y: 2.5833333}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -2555,7 +2587,7 @@ GameObject:
   - component: {fileID: 501202112}
   - component: {fileID: 501202113}
   m_Layer: 0
-  m_Name: zanahoria-azul
+  m_Name: cultivo-azul
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2638,10 +2670,10 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.5, y: 3.1}
+  m_Size: {x: 2.0833333, y: 2.5833333}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!61 &501202112
@@ -2681,7 +2713,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 2.0833333, y: 2.5833333}
-    newSize: {x: 2.5, y: 3.1}
+    newSize: {x: 2.0833333, y: 2.5833333}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -3470,7 +3502,7 @@ GameObject:
   - component: {fileID: 519300977}
   - component: {fileID: 519300978}
   m_Layer: 0
-  m_Name: mosca-azul
+  m_Name: plaga-azul
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3553,10 +3585,10 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.47, y: 3.1}
+  m_Size: {x: 2.0583334, y: 2.5833333}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!61 &519300977
@@ -3596,7 +3628,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 2.0583334, y: 2.5833333}
-    newSize: {x: 2.47, y: 3.1}
+    newSize: {x: 2.0583334, y: 2.5833333}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -4307,12 +4339,12 @@ GameObject:
   m_Component:
   - component: {fileID: 584691806}
   m_Layer: 0
-  m_Name: cultivosZanahoria
+  m_Name: CultivosZanahoria
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &584691806
 Transform:
   m_ObjectHideFlags: 0
@@ -4506,7 +4538,7 @@ GameObject:
   - component: {fileID: 703240937}
   - component: {fileID: 703240938}
   m_Layer: 0
-  m_Name: frijol-rojo
+  m_Name: cultivo-rojo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4589,10 +4621,10 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.45, y: 3.08}
+  m_Size: {x: 2.0416667, y: 2.5666666}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!61 &703240937
@@ -4632,7 +4664,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 2.0416667, y: 2.5666666}
-    newSize: {x: 2.45, y: 3.08}
+    newSize: {x: 2.0416667, y: 2.5666666}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -5387,7 +5419,7 @@ GameObject:
   - component: {fileID: 865101399}
   - component: {fileID: 865101400}
   m_Layer: 0
-  m_Name: calabaza-verde
+  m_Name: cultivo-verde
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5470,10 +5502,10 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.48, y: 3.1}
+  m_Size: {x: 2.0666666, y: 2.5833333}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!61 &865101399
@@ -5513,7 +5545,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 2.0666666, y: 2.5833333}
-    newSize: {x: 2.48, y: 3.1}
+    newSize: {x: 2.0666666, y: 2.5833333}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -5699,7 +5731,7 @@ GameObject:
   - component: {fileID: 882675921}
   - component: {fileID: 882675922}
   m_Layer: 0
-  m_Name: polilla-amarilla
+  m_Name: plaga-amarilla
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5782,10 +5814,10 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.47, y: 3.1}
+  m_Size: {x: 2.0583334, y: 2.5833333}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!61 &882675921
@@ -5825,7 +5857,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 2.0583334, y: 2.5833333}
-    newSize: {x: 2.47, y: 3.1}
+    newSize: {x: 2.0583334, y: 2.5833333}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -5974,7 +6006,7 @@ GameObject:
   - component: {fileID: 894879755}
   - component: {fileID: 894879756}
   m_Layer: 0
-  m_Name: zanahoria-azul
+  m_Name: cultivo-azul
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6057,10 +6089,10 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.5, y: 3.1}
+  m_Size: {x: 2.0833333, y: 2.5833333}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!61 &894879755
@@ -6100,7 +6132,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 2.0833333, y: 2.5833333}
-    newSize: {x: 2.5, y: 3.1}
+    newSize: {x: 2.0833333, y: 2.5833333}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -6733,7 +6765,7 @@ GameObject:
   - component: {fileID: 934000640}
   - component: {fileID: 934000641}
   m_Layer: 0
-  m_Name: zanahoria-azul
+  m_Name: cultivo-azul
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6816,10 +6848,10 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.5, y: 3.1}
+  m_Size: {x: 2.0833333, y: 2.5833333}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!61 &934000640
@@ -6859,7 +6891,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 2.0833333, y: 2.5833333}
-    newSize: {x: 2.5, y: 3.1}
+    newSize: {x: 2.0833333, y: 2.5833333}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -7098,6 +7130,38 @@ Transform:
   - {fileID: 894879752}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1028362785
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1028362786}
+  m_Layer: 0
+  m_Name: CultivosFrijol
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1028362786
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1028362785}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.5742296, y: -1.5285046, z: 0.054534953}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2044496080}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1045090517
 GameObject:
   m_ObjectHideFlags: 0
@@ -7160,6 +7224,38 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1473652722}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1079608577
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1079608578}
+  m_Layer: 0
+  m_Name: CultivosCalabaza
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1079608578
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079608577}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.5742296, y: -1.5285046, z: 0.054534953}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8296618}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1096716850
 GameObject:
   m_ObjectHideFlags: 0
@@ -7174,7 +7270,7 @@ GameObject:
   - component: {fileID: 1096716854}
   - component: {fileID: 1096716855}
   m_Layer: 0
-  m_Name: frijol-rojo
+  m_Name: cultivo-rojo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7257,10 +7353,10 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.45, y: 3.08}
+  m_Size: {x: 2.0416667, y: 2.5666666}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!61 &1096716854
@@ -7300,7 +7396,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 2.0416667, y: 2.5666666}
-    newSize: {x: 2.45, y: 3.08}
+    newSize: {x: 2.0416667, y: 2.5666666}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -8193,7 +8289,7 @@ GameObject:
   - component: {fileID: 1216021682}
   - component: {fileID: 1216021683}
   m_Layer: 0
-  m_Name: mosca-azul
+  m_Name: plaga-azul
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8276,10 +8372,10 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.47, y: 3.1}
+  m_Size: {x: 2.0583334, y: 2.5833333}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!61 &1216021682
@@ -8319,7 +8415,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 2.0583334, y: 2.5833333}
-    newSize: {x: 2.47, y: 3.1}
+    newSize: {x: 2.0583334, y: 2.5833333}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -8440,7 +8536,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &1219862937
 Animator:
   serializedVersion: 5
@@ -9424,7 +9520,7 @@ GameObject:
   - component: {fileID: 1444290703}
   - component: {fileID: 1444290704}
   m_Layer: 0
-  m_Name: polilla-amarilla
+  m_Name: plaga-amarilla
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9507,10 +9603,10 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.47, y: 3.1}
+  m_Size: {x: 2.0583334, y: 2.5833333}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!61 &1444290703
@@ -9550,7 +9646,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 2.0583334, y: 2.5833333}
-    newSize: {x: 2.47, y: 3.1}
+    newSize: {x: 2.0583334, y: 2.5833333}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -10879,7 +10975,7 @@ GameObject:
   - component: {fileID: 1621041236}
   - component: {fileID: 1621041237}
   m_Layer: 0
-  m_Name: trigo-amarillo
+  m_Name: cultivo-amarillo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10962,10 +11058,10 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.49, y: 3.1}
+  m_Size: {x: 2.075, y: 2.5833333}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!61 &1621041236
@@ -11005,7 +11101,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 2.075, y: 2.5833333}
-    newSize: {x: 2.49, y: 3.1}
+    newSize: {x: 2.075, y: 2.5833333}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -11154,7 +11250,7 @@ GameObject:
   - component: {fileID: 1638750590}
   - component: {fileID: 1638750591}
   m_Layer: 0
-  m_Name: frijol-rojo
+  m_Name: cultivo-rojo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11237,10 +11333,10 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.45, y: 3.08}
+  m_Size: {x: 2.0416667, y: 2.5666666}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!61 &1638750590
@@ -11280,7 +11376,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 2.0416667, y: 2.5666666}
-    newSize: {x: 2.45, y: 3.08}
+    newSize: {x: 2.0416667, y: 2.5666666}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -11599,7 +11695,7 @@ GameObject:
   - component: {fileID: 1696704683}
   - component: {fileID: 1696704684}
   m_Layer: 0
-  m_Name: trigo-amarillo
+  m_Name: cultivo-amarillo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11682,10 +11778,10 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.49, y: 3.1}
+  m_Size: {x: 2.075, y: 2.5833333}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!61 &1696704683
@@ -11725,7 +11821,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 2.075, y: 2.5833333}
-    newSize: {x: 2.49, y: 3.1}
+    newSize: {x: 2.075, y: 2.5833333}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -11927,7 +12023,7 @@ GameObject:
   - component: {fileID: 1719874649}
   - component: {fileID: 1719874650}
   m_Layer: 0
-  m_Name: polilla-amarilla
+  m_Name: plaga-amarilla
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12010,10 +12106,10 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.47, y: 3.1}
+  m_Size: {x: 2.0583334, y: 2.5833333}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!61 &1719874649
@@ -12053,7 +12149,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 2.0583334, y: 2.5833333}
-    newSize: {x: 2.47, y: 3.1}
+    newSize: {x: 2.0583334, y: 2.5833333}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -12562,7 +12658,7 @@ GameObject:
   - component: {fileID: 1778709372}
   - component: {fileID: 1778709373}
   m_Layer: 0
-  m_Name: trigo-amarillo
+  m_Name: cultivo-amarillo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12645,10 +12741,10 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.49, y: 3.1}
+  m_Size: {x: 2.075, y: 2.5833333}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!61 &1778709372
@@ -12688,7 +12784,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 2.075, y: 2.5833333}
-    newSize: {x: 2.49, y: 3.1}
+    newSize: {x: 2.075, y: 2.5833333}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -12806,7 +12902,7 @@ GameObject:
   - component: {fileID: 1795816253}
   - component: {fileID: 1795816254}
   m_Layer: 0
-  m_Name: calabaza-verde
+  m_Name: cultivo-verde
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12889,10 +12985,10 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.48, y: 3.1}
+  m_Size: {x: 2.0666666, y: 2.5833333}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!61 &1795816253
@@ -12932,7 +13028,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 2.0666666, y: 2.5833333}
-    newSize: {x: 2.48, y: 3.1}
+    newSize: {x: 2.0666666, y: 2.5833333}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -13081,7 +13177,7 @@ GameObject:
   - component: {fileID: 1811651551}
   - component: {fileID: 1811651552}
   m_Layer: 0
-  m_Name: zanahoria-azul
+  m_Name: cultivo-azul
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13164,10 +13260,10 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.5, y: 3.1}
+  m_Size: {x: 2.0833333, y: 2.5833333}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!61 &1811651551
@@ -13207,7 +13303,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 2.0833333, y: 2.5833333}
-    newSize: {x: 2.5, y: 3.1}
+    newSize: {x: 2.0833333, y: 2.5833333}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -13775,7 +13871,7 @@ GameObject:
   - component: {fileID: 1930343048}
   - component: {fileID: 1930343049}
   m_Layer: 0
-  m_Name: calabaza-verde
+  m_Name: cultivo-verde
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13853,12 +13949,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 493e36ef7325a944da6279c122be3043, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0d55bc4f23ed79d428cd90e607a04eee, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.48, y: 3.1}
+  m_Size: {x: 2.0666666, y: 2.5833333}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -13901,7 +13997,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 2.0666666, y: 2.5833333}
-    newSize: {x: 2.48, y: 3.1}
+    newSize: {x: 2.0666666, y: 2.5833333}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -14118,7 +14214,7 @@ GameObject:
   - component: {fileID: 1995944512}
   - component: {fileID: 1995944513}
   m_Layer: 0
-  m_Name: mosca-azul
+  m_Name: plaga-azul
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14201,10 +14297,10 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.47, y: 3.1}
+  m_Size: {x: 2.0583334, y: 2.5833333}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!61 &1995944511
@@ -14244,7 +14340,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 2.0583334, y: 2.5833333}
-    newSize: {x: 2.47, y: 3.1}
+    newSize: {x: 2.0583334, y: 2.5833333}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -14703,7 +14799,7 @@ GameObject:
   - component: {fileID: 2038449755}
   - component: {fileID: 2038449756}
   m_Layer: 0
-  m_Name: calabaza-verde
+  m_Name: cultivo-verde
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14786,10 +14882,10 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.48, y: 3.1}
+  m_Size: {x: 2.0666666, y: 2.5833333}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!61 &2038449755
@@ -14829,7 +14925,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 2.0666666, y: 2.5833333}
-    newSize: {x: 2.48, y: 3.1}
+    newSize: {x: 2.0666666, y: 2.5833333}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -15063,12 +15159,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2044496077}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.899, y: -2.5493, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -7.3247705, y: -1.0207953, z: -0.054534953}
   m_LocalScale: {x: 0.14525506, y: 0.11887055, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1028362786}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2045770911
 GameObject:
@@ -15084,7 +15180,7 @@ GameObject:
   - component: {fileID: 2045770915}
   - component: {fileID: 2045770916}
   m_Layer: 0
-  m_Name: trigo-amarillo
+  m_Name: cultivo-amarillo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15167,10 +15263,10 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.49, y: 3.1}
+  m_Size: {x: 2.075, y: 2.5833333}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!61 &2045770915
@@ -15210,7 +15306,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 2.075, y: 2.5833333}
-    newSize: {x: 2.49, y: 3.1}
+    newSize: {x: 2.075, y: 2.5833333}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -15556,10 +15652,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99511c8680a3940c8b8d4f24bd0e6b9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  notificationPanel: {fileID: 0}
-  messageText: {fileID: 1193512286}
-  cardImage: {fileID: 0}
-  displayDuration: 3
 --- !u!1 &2119081538
 GameObject:
   m_ObjectHideFlags: 0
@@ -15699,7 +15791,7 @@ SceneRoots:
   - {fileID: 354430798}
   - {fileID: 876808119}
   - {fileID: 1712702538}
-  - {fileID: 8296618}
-  - {fileID: 263185572}
-  - {fileID: 2044496080}
+  - {fileID: 1079608578}
+  - {fileID: 1028362786}
+  - {fileID: 257882136}
   - {fileID: 584691806}
