@@ -141,7 +141,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &228463339
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1245,7 +1245,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Iv\xE1n Alexander Ramos Ram\xEDrez"
+  m_Text: Ivan Alexander Ramos Ramirez
 --- !u!222 &565915247
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2805,7 +2805,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Israel Rocha Ram\xEDrez"
+  m_Text: Israel Rocha Ramirez
 --- !u!222 &1656248518
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3712,7 +3712,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Andr\xE9s Cabrera Alvarado\n"
+  m_Text: 'Andres Cabrera Alvarado
+
+'
 --- !u!222 &1916164785
 CanvasRenderer:
   m_ObjectHideFlags: 0
