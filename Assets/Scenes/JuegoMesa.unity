@@ -745,6 +745,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handIndex: 0
   cardOnHand: 0
+  cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
 --- !u!212 &125295222
@@ -1205,6 +1206,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handIndex: 0
   cardOnHand: 0
+  cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
 --- !u!212 &137308535
@@ -1449,6 +1451,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handIndex: 0
   cardOnHand: 0
+  cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
 --- !u!212 &146136044
@@ -1552,6 +1555,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handIndex: 0
   cardOnHand: 0
+  cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
 --- !u!212 &168652726
@@ -2258,6 +2262,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handIndex: 0
   cardOnHand: 0
+  cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
 --- !u!212 &226556482
@@ -2685,6 +2690,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handIndex: 0
   cardOnHand: 0
+  cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
 --- !u!212 &293787161
@@ -2929,6 +2935,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handIndex: 0
   cardOnHand: 0
+  cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
 --- !u!212 &294937144
@@ -3314,6 +3321,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handIndex: 0
   cardOnHand: 0
+  cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
 --- !u!212 &295133839
@@ -3558,6 +3566,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handIndex: 0
   cardOnHand: 0
+  cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
 --- !u!212 &306433384
@@ -4065,6 +4074,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handIndex: 0
   cardOnHand: 0
+  cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
 --- !u!212 &430883332
@@ -4305,6 +4315,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handIndex: 0
   cardOnHand: 0
+  cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
 --- !u!212 &501202111
@@ -4549,6 +4560,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handIndex: 0
   cardOnHand: 0
+  cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
 --- !u!212 &502182028
@@ -4794,6 +4806,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handIndex: 0
   cardOnHand: 0
+  cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
 --- !u!212 &511399366
@@ -5326,6 +5339,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handIndex: 0
   cardOnHand: 0
+  cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
 --- !u!212 &519300976
@@ -6577,6 +6591,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handIndex: 0
   cardOnHand: 0
+  cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
 --- !u!212 &703240936
@@ -7099,6 +7114,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handIndex: 0
   cardOnHand: 0
+  cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
 --- !u!212 &742453354
@@ -7949,6 +7965,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handIndex: 0
   cardOnHand: 0
+  cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
 --- !u!212 &845951678
@@ -8052,6 +8069,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handIndex: 0
   cardOnHand: 0
+  cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
 --- !u!212 &865101398
@@ -8364,6 +8382,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handIndex: 0
   cardOnHand: 0
+  cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
 --- !u!212 &882675920
@@ -8749,6 +8768,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handIndex: 0
   cardOnHand: 0
+  cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
 --- !u!212 &886136208
@@ -8883,6 +8903,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handIndex: 0
   cardOnHand: 0
+  cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
 --- !u!212 &894879754
@@ -9398,6 +9419,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handIndex: 0
   cardOnHand: 0
+  cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
 --- !u!212 &918065293
@@ -9642,6 +9664,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handIndex: 0
   cardOnHand: 0
+  cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
 --- !u!212 &934000639
@@ -10027,6 +10050,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handIndex: 0
   cardOnHand: 0
+  cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
 --- !u!212 &937164154
@@ -10271,6 +10295,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handIndex: 0
   cardOnHand: 0
+  cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
 --- !u!212 &943155168
@@ -10654,6 +10679,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handIndex: 0
   cardOnHand: 0
+  cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
 --- !u!212 &1025694079
@@ -10889,6 +10915,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handIndex: 0
   cardOnHand: 0
+  cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
 --- !u!212 &1096716853
@@ -11908,8 +11935,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handIndex: 0
   cardOnHand: 0
+  cardColor: 0
   player: {fileID: 0}
-  tipoCarta: 0
+  tipoCarta: 1
 --- !u!212 &1216021681
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12681,8 +12709,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handIndex: 0
   cardOnHand: 0
+  cardColor: 0
   player: {fileID: 0}
-  tipoCarta: 0
+  tipoCarta: 1
 --- !u!212 &1316360958
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13100,6 +13129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handIndex: 0
   cardOnHand: 0
+  cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
 --- !u!212 &1353848053
@@ -13387,6 +13417,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handIndex: 0
   cardOnHand: 0
+  cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
 --- !u!212 &1444290702
@@ -14050,6 +14081,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handIndex: 0
   cardOnHand: 0
+  cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
 --- !u!212 &1548146169
@@ -14952,6 +14984,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handIndex: 0
   cardOnHand: 0
+  cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
 --- !u!212 &1621041235
@@ -15227,6 +15260,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handIndex: 0
   cardOnHand: 0
+  cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
 --- !u!212 &1638750589
@@ -15672,6 +15706,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handIndex: 0
   cardOnHand: 0
+  cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
 --- !u!212 &1696704682
@@ -16000,6 +16035,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handIndex: 0
   cardOnHand: 0
+  cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
 --- !u!212 &1719874648
@@ -16244,6 +16280,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handIndex: 0
   cardOnHand: 0
+  cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
 --- !u!212 &1731047545
@@ -16629,6 +16666,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handIndex: 0
   cardOnHand: 0
+  cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
 --- !u!212 &1744523836
@@ -16873,6 +16911,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handIndex: 0
   cardOnHand: 0
+  cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
 --- !u!212 &1757085992
@@ -17229,6 +17268,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handIndex: 0
   cardOnHand: 0
+  cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
 --- !u!212 &1778709371
@@ -17473,6 +17513,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handIndex: 0
   cardOnHand: 0
+  cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
 --- !u!212 &1795816252
@@ -17748,6 +17789,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handIndex: 0
   cardOnHand: 0
+  cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
 --- !u!212 &1811651550
@@ -18654,6 +18696,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handIndex: 0
   cardOnHand: 0
+  cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
 --- !u!212 &1930343047
@@ -18997,6 +19040,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handIndex: 0
   cardOnHand: 0
+  cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
 --- !u!212 &1995944510
@@ -19338,6 +19382,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handIndex: 0
   cardOnHand: 0
+  cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
 --- !u!212 &2036624210
@@ -19582,6 +19627,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handIndex: 0
   cardOnHand: 0
+  cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
 --- !u!212 &2038449754
@@ -19963,6 +20009,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handIndex: 0
   cardOnHand: 0
+  cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
 --- !u!212 &2045770914
@@ -20348,6 +20395,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handIndex: 0
   cardOnHand: 0
+  cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
 --- !u!212 &2048633360

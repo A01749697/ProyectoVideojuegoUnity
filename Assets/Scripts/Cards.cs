@@ -2,12 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// 0 = crops
-// 1 = plague
+// 0 = cultivo
+// 1 = plaga
+// 2= spray
+
+// 0 = verde
+// 1 = rojo
+// 2 = azul
+// 3 = amarillo
+
 public class Cards : MonoBehaviour
 {
     public int handIndex;
     public bool cardOnHand;
+    public int cardColor;
     public Player player;
     [SerializeField]
     private int tipoCarta;
@@ -15,14 +23,51 @@ public class Cards : MonoBehaviour
     private Coroutine colorChangeCoroutine;
     private AudioSource AudioSource;
 
-    private void Awake()
-    {
-        spriteRenderer = GetComponent<SpriteRenderer>();
-        AudioSource = GetComponent<AudioSource>();
-        if (AudioSource == null){
-            AudioSource = gameObject.AddComponent<AudioSource>();
-        }
+private void Awake()
+{
+    spriteRenderer = GetComponent<SpriteRenderer>();
+    AudioSource = GetComponent<AudioSource>();
+    if (AudioSource == null){
+        AudioSource = gameObject.AddComponent<AudioSource>();
     }
+
+    // Get the name of the GameObject
+    string cardName = gameObject.name;
+
+    // Split the name by the '-' character
+    string[] cardParts = cardName.Split('-');
+
+    // Check the first part of the split name and assign the corresponding value to tipoCarta
+    switch (cardParts[0])
+    {
+        case "cultivo":
+            tipoCarta = 0;
+            break;
+        case "plaga":
+            tipoCarta = 1;
+            break;
+        case "spray":
+            tipoCarta = 2;
+            break;
+    }
+
+    // Check the second part of the split name and assign the corresponding value to cardColor
+    switch (cardParts[1])
+    {
+        case "verde":
+            cardColor = 0;
+            break;
+        case "rojo":
+            cardColor = 1;
+            break;
+        case "azul":
+            cardColor = 2;
+            break;
+        case "amarillo":
+            cardColor = 3;
+            break;
+    }
+}
 
     public void OnMouseDown()
     {
