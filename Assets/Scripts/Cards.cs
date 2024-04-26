@@ -13,6 +13,7 @@ using UnityEngine;
 
 public class Cards : MonoBehaviour
 {
+    private static int currentHighestOrderInLayer = 0;
     public int handIndex;
     public bool cardOnHand;
     public int cardColor;
@@ -93,7 +94,13 @@ private void Awake()
         player.availableCardSlots[handIndex] = true;
         player.hasPlayedCard = true;
         transform.position = new Vector3(7.6f, -1.75f, 0);
+        //quitarle la rotacion a la carta
+        transform.rotation = Quaternion.identity;
         cardOnHand = false;
+
+        // Increment the current highest order in layer and set the card's order in layer to this value
+        currentHighestOrderInLayer++;
+        spriteRenderer.sortingOrder = currentHighestOrderInLayer;
     }
 
     private void Update()

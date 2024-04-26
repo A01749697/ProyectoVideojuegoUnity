@@ -22,6 +22,8 @@ public class GameManager : MonoBehaviour
             return;
         }
         currentPlayer.hasDrawnCard = true;
+        //activar modo tirar carta
+        modoTirarCarta = true;
     }
 
     public void DrawCard(){   
