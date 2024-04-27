@@ -12,6 +12,12 @@ public class HudGame : MonoBehaviour
     public TMP_Text PLAYER2informationUI;
     public TMP_Text PLAYER3informationUI;
     public TMP_Text PLAYER4informationUI;
+
+    public TMP_Text player1Cultivos;
+    public TMP_Text player2Cultivos;
+    public TMP_Text player3Cultivos;
+    public TMP_Text player4Cultivos;
+
     private void Awake()
     {
         if(instance == null)
@@ -21,6 +27,22 @@ public class HudGame : MonoBehaviour
     }
 
     public void UpdatePlayerInformationUI(int indexPlayer, int pathIndex)
+    {
+        if(indexPlayer==1){
+            PLAYER1informationUI.text = pathIndex + "/24";
+        }
+        if(indexPlayer==2){
+            PLAYER2informationUI.text = pathIndex + "/24";
+        }
+        if(indexPlayer==3){
+            PLAYER3informationUI.text = pathIndex + "/24";
+        }
+        if(indexPlayer==4){
+            PLAYER4informationUI.text = pathIndex + "/24";
+        }
+    }
+
+    public void UpdatePlayerCultivosUI(int indexPlayer, int pathIndex)
     {
         if(indexPlayer==1){
             PLAYER1informationUI.text = pathIndex + "/24";

@@ -24,51 +24,51 @@ public class Cards : MonoBehaviour
     private Coroutine colorChangeCoroutine;
     private AudioSource AudioSource;
 
-private void Awake()
-{
-    spriteRenderer = GetComponent<SpriteRenderer>();
-    AudioSource = GetComponent<AudioSource>();
-    if (AudioSource == null){
-        AudioSource = gameObject.AddComponent<AudioSource>();
-    }
-
-    // Get the name of the GameObject
-    string cardName = gameObject.name;
-
-    // Split the name by the '-' character
-    string[] cardParts = cardName.Split('-');
-
-    // Check the first part of the split name and assign the corresponding value to tipoCarta
-    switch (cardParts[0])
+    private void Awake()
     {
-        case "cultivo":
-            tipoCarta = 0;
-            break;
-        case "plaga":
-            tipoCarta = 1;
-            break;
-        case "spray":
-            tipoCarta = 2;
-            break;
-    }
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        AudioSource = GetComponent<AudioSource>();
+        if (AudioSource == null){
+            AudioSource = gameObject.AddComponent<AudioSource>();
+        }
 
-    // Check the second part of the split name and assign the corresponding value to cardColor
-    switch (cardParts[1])
-    {
-        case "verde":
-            cardColor = 0;
-            break;
-        case "rojo":
-            cardColor = 1;
-            break;
-        case "azul":
-            cardColor = 2;
-            break;
-        case "amarillo":
-            cardColor = 3;
-            break;
+        // Get the name of the GameObject
+        string cardName = gameObject.name;
+
+        // Split the name by the '-' character
+        string[] cardParts = cardName.Split('-');
+
+        // Check the first part of the split name and assign the corresponding value to tipoCarta
+        switch (cardParts[0])
+        {
+            case "cultivo":
+                tipoCarta = 0;
+                break;
+            case "plaga":
+                tipoCarta = 1;
+                break;
+            case "spray":
+                tipoCarta = 2;
+                break;
+        }
+
+        // Check the second part of the split name and assign the corresponding value to cardColor
+        switch (cardParts[1])
+        {
+            case "verde":
+                cardColor = 0;
+                break;
+            case "rojo":
+                cardColor = 1;
+                break;
+            case "azul":
+                cardColor = 2;
+                break;
+            case "amarillo":
+                cardColor = 3;
+                break;
+        }
     }
-}
 
     public void OnMouseDown()
     {
@@ -78,13 +78,13 @@ private void Awake()
         }
 
         //Si el tipo de carta es de tipo "crop", imprimir "El jugador jugo un cultivo"
-        if (tipoCarta == 0)
-        {
+        if (tipoCarta == 0){
             Debug.Log("El jugador jugo un cultivo");
-        }//Si el tipo de carta es tipo "plague", imprimir "El jugador jugo una plaga"
-        else if (tipoCarta == 1)
-        {
+        }else if (tipoCarta == 1){
             Debug.Log("El jugador jugo una plaga");
+
+        }else if (tipoCarta == 2){
+            Debug.Log("El jugador jugo un spray");
         }
 
         if(AudioSource != null && AudioSource.clip != null){
