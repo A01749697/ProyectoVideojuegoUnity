@@ -824,6 +824,7 @@ MonoBehaviour:
   cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
+  tipoCultivo: 0
 --- !u!212 &125295222
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1285,6 +1286,7 @@ MonoBehaviour:
   cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
+  tipoCultivo: 0
 --- !u!212 &137308535
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1530,6 +1532,7 @@ MonoBehaviour:
   cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
+  tipoCultivo: 0
 --- !u!212 &146136044
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1634,6 +1637,7 @@ MonoBehaviour:
   cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
+  tipoCultivo: 0
 --- !u!212 &168652726
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2123,6 +2127,10 @@ MonoBehaviour:
   - {fileID: 882675919}
   - {fileID: 1778709370}
   - {fileID: 934000638}
+  - {fileID: 1757085991}
+  - {fileID: 226556481}
+  - {fileID: 1025694078}
+  - {fileID: 137308534}
   cardSlots:
   - {fileID: 1858879310}
   - {fileID: 1583249452}
@@ -2132,6 +2140,7 @@ MonoBehaviour:
   hasThrownCard: 0
   hasRolledDice: 0
   hasPlayedCard: 0
+  cultivosAvailable: 00000000
   numberCultivos: 0
 --- !u!114 &225350044
 MonoBehaviour:
@@ -2476,6 +2485,7 @@ MonoBehaviour:
   cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
+  tipoCultivo: 0
 --- !u!212 &226556482
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3020,6 +3030,7 @@ MonoBehaviour:
   cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
+  tipoCultivo: 0
 --- !u!212 &293787161
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3265,6 +3276,7 @@ MonoBehaviour:
   cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
+  tipoCultivo: 0
 --- !u!212 &294937144
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3651,6 +3663,7 @@ MonoBehaviour:
   cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
+  tipoCultivo: 0
 --- !u!212 &295133839
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3896,6 +3909,7 @@ MonoBehaviour:
   cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
+  tipoCultivo: 0
 --- !u!212 &306433384
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4691,6 +4705,7 @@ MonoBehaviour:
   cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
+  tipoCultivo: 0
 --- !u!212 &430883332
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4932,6 +4947,7 @@ MonoBehaviour:
   cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
+  tipoCultivo: 0
 --- !u!212 &501202111
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5177,6 +5193,7 @@ MonoBehaviour:
   cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
+  tipoCultivo: 0
 --- !u!212 &502182028
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5423,6 +5440,7 @@ MonoBehaviour:
   cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
+  tipoCultivo: 0
 --- !u!212 &511399366
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5956,6 +5974,7 @@ MonoBehaviour:
   cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
+  tipoCultivo: 0
 --- !u!212 &519300976
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7417,6 +7436,7 @@ MonoBehaviour:
   cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
+  tipoCultivo: 0
 --- !u!212 &703240936
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7940,6 +7960,7 @@ MonoBehaviour:
   cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
+  tipoCultivo: 0
 --- !u!212 &742453354
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8154,6 +8175,10 @@ MonoBehaviour:
   - {fileID: 168652725}
   - {fileID: 2045770913}
   - {fileID: 1811651549}
+  - {fileID: 295133838}
+  - {fileID: 937164153}
+  - {fileID: 886136207}
+  - {fileID: 1744523835}
   cardSlots:
   - {fileID: 410873245}
   - {fileID: 346080456}
@@ -8163,6 +8188,7 @@ MonoBehaviour:
   hasThrownCard: 0
   hasRolledDice: 0
   hasPlayedCard: 0
+  cultivosAvailable: 00000000
   numberCultivos: 0
 --- !u!114 &758212749
 MonoBehaviour:
@@ -8828,6 +8854,7 @@ MonoBehaviour:
   cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
+  tipoCultivo: 0
 --- !u!212 &845951678
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8932,6 +8959,7 @@ MonoBehaviour:
   cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
+  tipoCultivo: 0
 --- !u!212 &865101398
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9245,6 +9273,7 @@ MonoBehaviour:
   cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
+  tipoCultivo: 0
 --- !u!212 &882675920
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9631,6 +9660,7 @@ MonoBehaviour:
   cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
+  tipoCultivo: 0
 --- !u!212 &886136208
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9766,6 +9796,7 @@ MonoBehaviour:
   cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
+  tipoCultivo: 0
 --- !u!212 &894879754
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10416,6 +10447,7 @@ MonoBehaviour:
   cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
+  tipoCultivo: 0
 --- !u!212 &918065293
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10661,6 +10693,7 @@ MonoBehaviour:
   cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
+  tipoCultivo: 0
 --- !u!212 &934000639
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11047,6 +11080,7 @@ MonoBehaviour:
   cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
+  tipoCultivo: 0
 --- !u!212 &937164154
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11292,6 +11326,7 @@ MonoBehaviour:
   cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
+  tipoCultivo: 0
 --- !u!212 &943155168
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11676,6 +11711,7 @@ MonoBehaviour:
   cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
+  tipoCultivo: 0
 --- !u!212 &1025694079
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11912,6 +11948,7 @@ MonoBehaviour:
   cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
+  tipoCultivo: 0
 --- !u!212 &1096716853
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12643,6 +12680,10 @@ MonoBehaviour:
   - {fileID: 1444290701}
   - {fileID: 1696704681}
   - {fileID: 894879753}
+  - {fileID: 1353848052}
+  - {fileID: 2048633359}
+  - {fileID: 306433383}
+  - {fileID: 742453353}
   cardSlots:
   - {fileID: 172016166}
   - {fileID: 1904840894}
@@ -12652,6 +12693,7 @@ MonoBehaviour:
   hasThrownCard: 0
   hasRolledDice: 0
   hasPlayedCard: 0
+  cultivosAvailable: 00000000
   numberCultivos: 0
 --- !u!114 &1145946325
 MonoBehaviour:
@@ -13009,6 +13051,7 @@ MonoBehaviour:
   cardColor: 0
   player: {fileID: 0}
   tipoCarta: 1
+  tipoCultivo: 0
 --- !u!212 &1216021681
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13783,6 +13826,7 @@ MonoBehaviour:
   cardColor: 0
   player: {fileID: 0}
   tipoCarta: 1
+  tipoCultivo: 0
 --- !u!212 &1316360958
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14203,6 +14247,7 @@ MonoBehaviour:
   cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
+  tipoCultivo: 0
 --- !u!212 &1353848053
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14509,10 +14554,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1826341449}
   - {fileID: 758212745}
   - {fileID: 1145946321}
   - {fileID: 225350040}
+  - {fileID: 1826341449}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1444290699
@@ -14567,6 +14612,7 @@ MonoBehaviour:
   cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
+  tipoCultivo: 0
 --- !u!212 &1444290702
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14906,6 +14952,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49c558165678d5744ae46150951bf23d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  players: []
+  cultivos:
+  - {fileID: 1079608577}
+  - {fileID: 1028362785}
+  - {fileID: 584691805}
+  - {fileID: 257882135}
+  currentPlayer: {fileID: 0}
+  modoTirarCarta: 0
+  currentPlayerIndex: 0
+  diceSideThrown: 0
+  gameOver: 0
   TurnAnnouncement: {fileID: 2079831847}
 --- !u!4 &1501097574
 Transform:
@@ -15309,6 +15366,7 @@ MonoBehaviour:
   cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
+  tipoCultivo: 0
 --- !u!212 &1548146169
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16333,6 +16391,7 @@ MonoBehaviour:
   cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
+  tipoCultivo: 0
 --- !u!212 &1621041235
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16688,6 +16747,7 @@ MonoBehaviour:
   cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
+  tipoCultivo: 0
 --- !u!212 &1638750589
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17268,6 +17328,7 @@ MonoBehaviour:
   cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
+  tipoCultivo: 0
 --- !u!212 &1696704682
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17513,6 +17574,7 @@ MonoBehaviour:
   cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
+  tipoCultivo: 0
 --- !u!212 &1719874648
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17758,6 +17820,7 @@ MonoBehaviour:
   cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
+  tipoCultivo: 0
 --- !u!212 &1731047545
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18144,6 +18207,7 @@ MonoBehaviour:
   cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
+  tipoCultivo: 0
 --- !u!212 &1744523836
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18389,6 +18453,7 @@ MonoBehaviour:
   cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
+  tipoCultivo: 0
 --- !u!212 &1757085992
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18746,6 +18811,7 @@ MonoBehaviour:
   cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
+  tipoCultivo: 0
 --- !u!212 &1778709371
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18991,6 +19057,7 @@ MonoBehaviour:
   cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
+  tipoCultivo: 0
 --- !u!212 &1795816252
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19267,6 +19334,7 @@ MonoBehaviour:
   cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
+  tipoCultivo: 0
 --- !u!212 &1811651550
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19600,6 +19668,7 @@ MonoBehaviour:
   hasThrownCard: 0
   hasRolledDice: 0
   hasPlayedCard: 0
+  cultivosAvailable: 00000000
   numberCultivos: 0
 --- !u!114 &1826341453
 MonoBehaviour:
@@ -20175,6 +20244,7 @@ MonoBehaviour:
   cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
+  tipoCultivo: 0
 --- !u!212 &1930343047
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20554,6 +20624,7 @@ MonoBehaviour:
   cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
+  tipoCultivo: 0
 --- !u!212 &1995944510
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20896,6 +20967,7 @@ MonoBehaviour:
   cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
+  tipoCultivo: 0
 --- !u!212 &2036624210
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21141,6 +21213,7 @@ MonoBehaviour:
   cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
+  tipoCultivo: 0
 --- !u!212 &2038449754
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21523,6 +21596,7 @@ MonoBehaviour:
   cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
+  tipoCultivo: 0
 --- !u!212 &2045770914
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21909,6 +21983,7 @@ MonoBehaviour:
   cardColor: 0
   player: {fileID: 0}
   tipoCarta: 0
+  tipoCultivo: 0
 --- !u!212 &2048633360
 SpriteRenderer:
   m_ObjectHideFlags: 0
