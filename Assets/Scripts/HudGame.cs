@@ -45,8 +45,6 @@ public class HudGame : MonoBehaviour
 
     public void UpdatePlayerCultivosUI(int indexPlayer, int numCultivos)
     {
-        //imprimri algo
-        Debug.Log("AAAAAAAAAAAAA has already thrown a card this turn.");
         if(indexPlayer==1){
             player1Cultivos.text = numCultivos + "/4";
         }

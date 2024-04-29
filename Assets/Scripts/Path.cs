@@ -32,7 +32,28 @@ public class Path : MonoBehaviour
     private IEnumerator Move(){
         coroutineAllowed = false;
         for(int i=0; i < GameManager.instance.diceSideThrown; i++){
-            if(waypointIndex == 23){
+            if(waypointIndex == 24){
+                //Cada vez que un jugador llega al final, se le añade un cultivo de forma automatica
+                GameManager.instance.currentPlayer.numberCultivos++;  
+                //Recorrero las availableCultivos del jugador Actual para encontrar un cultivo disponible, si lo hay, se vuelve true
+                for(int j = 0; j < 4; j++){
+                    if(!GameManager.instance.currentPlayer.cultivosAvailable[j]){
+                        GameManager.instance.currentPlayer.cultivosAvailable[j] = true;
+                        //Activar cultivo correspondiente del gameManager solo si es el jugador 1
+                        if(GameManager.instance.currentPlayerIndex == 0){
+                            GameManager.instance.cultivos[j].SetActive(true);
+                        }
+                        //Actualizar el Hud de los cultivos
+                        HudGame.instance.UpdatePlayerCultivosUI(GameManager.instance.currentPlayerIndex+1,GameManager.instance.currentPlayer.numberCultivos); 
+                        //Si el jugador actual tiene 4 cultivos: Game Over
+                        if(GameManager.instance.currentPlayer.numberCultivos == 4){
+                            GameManager.instance.gameOver = true;
+                            endGame.instance.EndGameMoment();
+                        }
+                        break;
+                    }
+                }
+
                 waypointIndex = 0;
                 HudGame.instance.UpdatePlayerInformationUI(Dice.playerIndex, waypointIndex);
             }            
