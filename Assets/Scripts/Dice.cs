@@ -33,7 +33,7 @@ public class Dice : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if(!GameManager.gameOver && GameManager.currentPlayerIndex == playerIndex) StartCoroutine("RollTheDice");
+        if(!GameManager.instance.gameOver && GameManager.instance.currentPlayerIndex == playerIndex) StartCoroutine("RollTheDice");
     }
 
     private IEnumerator RollTheDice()
@@ -47,8 +47,8 @@ public class Dice : MonoBehaviour
             spriteRenderer.sprite = ladoDado[randomDiceSide];
             yield return new WaitForSeconds(0.05f);
         }
-        GameManager.diceSideThrown=randomDiceSide+1;
-        GameManager.currentPlayer.GetComponent<Path>().moveAllowed = true;
+        GameManager.instance.diceSideThrown=randomDiceSide+1;
+        GameManager.instance.currentPlayer.GetComponent<Path>().moveAllowed = true;
         playerIndex = (playerIndex + 1) % 4;
     }
 

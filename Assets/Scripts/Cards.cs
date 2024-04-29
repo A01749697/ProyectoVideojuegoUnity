@@ -1,16 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 // 0 = cultivo
 // 1 = plaga
 // 2= spray
 
-// 0 = verde
-// 1 = rojo
-// 2 = azul
-// 3 = amarillo
-
+// 0 = verde //calabaza
+// 1 = rojo //frijol
+// 2 = azul //zanahoria
+// 3 = amarillo //trigo
 public class Cards : MonoBehaviour
 {
     private static int currentHighestOrderInLayer = 0;
@@ -20,6 +20,7 @@ public class Cards : MonoBehaviour
     public Player player;
     [SerializeField]
     private int tipoCarta;
+    public int tipoCultivo;
     private SpriteRenderer spriteRenderer;
     private Coroutine colorChangeCoroutine;
     private AudioSource AudioSource;
@@ -74,25 +75,101 @@ public class Cards : MonoBehaviour
     {
         //si el modo tirar carta esta activo, y se clikea una carta, la 
         //carta ya no estara en la mano del juagador, y se podra jugar fuera de la camara
-        if (GameManager.modoTirarCarta)
+        if (GameManager.instance.modoTirarCarta)
         {
             player.hasThrownCard = true;
             player.availableCardSlots[handIndex] = true;
             transform.position = new Vector3(12f, -1.75f, 0);
             cardOnHand = false;
-            GameManager.modoTirarCarta = false;
+            GameManager.instance.modoTirarCarta = false;
             return;
         }
         if (player.hasPlayedCard || player.hasThrownCard)
         {
             return;
         }
-
-        //Si el tipo de carta es de tipo "crop", imprimir "El jugador jugo un cultivo"
+        //Si el jugador juega una carta de cultivo(que ya ha jugado anteriormente y sigue en el campo), es invalido
+        if (tipoCarta == 0)
+        {
+            //Hacer un switch sobre el color de la carta
+            switch (cardColor)
+            {
+                case 0:
+                    if (player.cultivosAvailable[0])
+                    {
+                        return;
+                    }
+                    break;
+                case 1:
+                    if (player.cultivosAvailable[1])
+                    {
+                        return;
+                    }
+                    break;
+                case 2:
+                    if (player.cultivosAvailable[2])
+                    {
+                        return;
+                    }
+                    break;
+                case 3:
+                    if (player.cultivosAvailable[3])
+                    {
+                        return;
+                    }
+                    break;
+            }
+        }
+        
         if (tipoCarta == 0){
             player.numberCultivos++;
-            HudGame.instance.UpdatePlayerCultivosUI(GameManager.currentPlayerIndex+1, player.numberCultivos);
-            Debug.Log("El jugador jugo un cultivo");
+            //Hacer un siwtch sobre el color de la carta
+            switch (cardColor)
+            {
+                case 0:
+                    player.cultivosAvailable[0] = true;
+                    //Console Log
+                    Debug.Log("El jugador ya jugo una carta de cultivo verde");
+                    break;
+                case 1:
+                    //Console Log
+                    Debug.Log("El jugador ya jugo una carta de cultivo rojo");
+                    player.cultivosAvailable[1] = true;
+                    break;
+                case 2:
+                    //Console Log
+                    Debug.Log("El jugador ya jugo una carta de cultivo azul");
+                    player.cultivosAvailable[2] = true;
+                    break;
+                case 3:
+                    //Console Log
+                    Debug.Log("El jugador ya jugo una carta de cultivo amarillo");
+                    player.cultivosAvailable[3] = true;
+                    break;
+            }
+            //Si el jugador 1 juega una carta
+            if(GameManager.instance.currentPlayerIndex == 0){
+                switch (cardColor)
+                {
+                    case 0:
+                        //Activar el primer GameObject cultivos de GameManeger
+                        GameManager.instance.cultivos[0].SetActive(true);
+                        break;
+                    case 1:
+                        //Activar el segundo GameObject cultivos de GameManeger
+                        GameManager.instance.cultivos[1].SetActive(true);
+                        break;
+                    case 2:
+                        //Activar el tercer GameObject cultivos de GameManeger
+                        GameManager.instance.cultivos[2].SetActive(true);
+                        break;
+                    case 3:
+                        //Activar el cuarto GameObject cultivos de GameManeger
+                        GameManager.instance.cultivos[3].SetActive(true);
+                        break;
+                }
+            }
+            HudGame.instance.UpdatePlayerCultivosUI(GameManager.instance.currentPlayerIndex+1, player.numberCultivos); 
         }else if (tipoCarta == 1){
             Debug.Log("El jugador jugo una plaga");
 
@@ -114,10 +191,10 @@ public class Cards : MonoBehaviour
         // Increment the current highest order in layer and set the card's order in layer to this value
         currentHighestOrderInLayer++;
         spriteRenderer.sortingOrder = currentHighestOrderInLayer;
-        if(player.numberCultivos == 3){
+        if(player.numberCultivos == 4){
             //game over
             Debug.Log("Game Over");
-            GameManager.gameOver = true;
+            GameManager.instance.gameOver = true;
             //Se activa el panel de fin de juego
             endGame.instance.EndGameMoment();
         }
@@ -125,11 +202,11 @@ public class Cards : MonoBehaviour
 
     private void Update()
     {
-        if (GameManager.modoTirarCarta && cardOnHand && colorChangeCoroutine == null)
+        if (GameManager.instance.modoTirarCarta && cardOnHand && colorChangeCoroutine == null)
         {
             colorChangeCoroutine = StartCoroutine(ChangeColorOverTime());
         }
-        else if ((!GameManager.modoTirarCarta || !cardOnHand) && colorChangeCoroutine != null)
+        else if ((!GameManager.instance.modoTirarCarta || !cardOnHand) && colorChangeCoroutine != null)
         {
             StopCoroutine(colorChangeCoroutine);
             colorChangeCoroutine = null;

@@ -31,7 +31,7 @@ public class Path : MonoBehaviour
 
     private IEnumerator Move(){
         coroutineAllowed = false;
-        for(int i=0; i < GameManager.diceSideThrown; i++){
+        for(int i=0; i < GameManager.instance.diceSideThrown; i++){
             if(waypointIndex == 23){
                 waypointIndex = 0;
                 HudGame.instance.UpdatePlayerInformationUI(Dice.playerIndex, waypointIndex);
@@ -50,11 +50,11 @@ public class Path : MonoBehaviour
                 yield return null;
             }
             waypointIndex++;
-            HudGame.instance.UpdatePlayerInformationUI(Dice.playerIndex, waypointIndex);
+            HudGame.instance.UpdatePlayerInformationUI(GameManager.instance.currentPlayerIndex+1, waypointIndex);
         }
         moveAllowed = false;
         coroutineAllowed = true;
-        GameManager.currentPlayer.hasRolledDice = true;
+        GameManager.instance.currentPlayer.hasRolledDice = true;
     }
 }
 

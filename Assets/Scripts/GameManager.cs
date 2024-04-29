@@ -7,15 +7,17 @@ using UnityEngine.UI;
 using System.Linq;
 public class GameManager : MonoBehaviour
 {
-    public static GameObject[] players;
-    public static Player currentPlayer;
-    public static bool modoTirarCarta = false;
-    public static int currentPlayerIndex = 0;
-    public static int diceSideThrown = 0;
-    public static bool gameOver = false;
+    //Instacia estatica de tipo GameManager
+    public static GameManager instance;
+    public GameObject[] players;
+    //Hacer referencia a 4 Game Objects que representan a los cultivos
+    public GameObject[] cultivos;
+    public  Player currentPlayer;
+    public  bool modoTirarCarta = false;
+    public int currentPlayerIndex = 0;
+    public int diceSideThrown = 0;
+    public bool gameOver = false;
     public TurnAnnouncement TurnAnnouncement;
-
-
     public void TirarCarta(){
         if (currentPlayer.hasThrownCard || currentPlayer.hasPlayedCard) {
             Debug.Log("Player has already thrown a card this turn.");
@@ -117,6 +119,14 @@ public class GameManager : MonoBehaviour
             }
 
             currentPlayerIndex = (currentPlayerIndex + 1) % players.Length;
+        }
+    }
+
+    private void Awake()
+    {
+        if(instance == null)
+        {
+            instance = this;
         }
     }
 
