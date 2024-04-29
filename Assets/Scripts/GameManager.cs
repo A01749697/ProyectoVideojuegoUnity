@@ -17,13 +17,11 @@ public class GameManager : MonoBehaviour
 
 
     public void TirarCarta(){
-        if (currentPlayer.hasThrownCard) {
-            Debug.Log("Player has already drawn a card this turn.");
+        if (currentPlayer.hasThrownCard || currentPlayer.hasPlayedCard) {
+            Debug.Log("Player has already thrown a card this turn.");
             return;
         }
-        currentPlayer.hasDrawnCard = true;
-        //activar modo tirar carta
-        modoTirarCarta = true;
+        modoTirarCarta = !modoTirarCarta;
     }
 
     public void DrawCard(){   
@@ -113,7 +111,7 @@ public class GameManager : MonoBehaviour
             }
 
 
-            while (!currentPlayer.hasPlayedCard || !currentPlayer.hasRolledDice || !(currentPlayer.hasThrownCard || currentPlayer.hasDrawnCard))
+            while (!currentPlayer.hasDrawnCard || !currentPlayer.hasRolledDice || !(currentPlayer.hasThrownCard || currentPlayer.hasPlayedCard))
             { 
                 yield return null;
             }

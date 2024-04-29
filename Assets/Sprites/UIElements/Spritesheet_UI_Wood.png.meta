@@ -131,7 +131,7 @@ TextureImporter:
         width: 97
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -139,6 +139,27 @@ TextureImporter:
       bones: []
       spriteID: fb95d4419e6f2d04ebe23a5688d0e400
       internalID: -1542860748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_UI_Wood_1
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 160
+        width: 64
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c550a3c73f1d9a4a9f1f0e1dbf63ee7
+      internalID: -219417111
       vertices: []
       indices: 
       edges: []
@@ -155,6 +176,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Spritesheet_UI_Wood_0: -1542860748
+      Spritesheet_UI_Wood_1: -219417111
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -72,13 +72,26 @@ public class Cards : MonoBehaviour
 
     public void OnMouseDown()
     {
-        if (player.hasPlayedCard)
+        //si el modo tirar carta esta activo, y se clikea una carta, la 
+        //carta ya no estara en la mano del juagador, y se podra jugar fuera de la camara
+        if (GameManager.modoTirarCarta)
+        {
+            player.hasThrownCard = true;
+            player.availableCardSlots[handIndex] = true;
+            transform.position = new Vector3(12f, -1.75f, 0);
+            cardOnHand = false;
+            GameManager.modoTirarCarta = false;
+            return;
+        }
+        if (player.hasPlayedCard || player.hasThrownCard)
         {
             return;
         }
 
         //Si el tipo de carta es de tipo "crop", imprimir "El jugador jugo un cultivo"
         if (tipoCarta == 0){
+            player.numberCultivos++;
+            HudGame.instance.UpdatePlayerCultivosUI(GameManager.currentPlayerIndex+1, player.numberCultivos);
             Debug.Log("El jugador jugo un cultivo");
         }else if (tipoCarta == 1){
             Debug.Log("El jugador jugo una plaga");
@@ -101,6 +114,13 @@ public class Cards : MonoBehaviour
         // Increment the current highest order in layer and set the card's order in layer to this value
         currentHighestOrderInLayer++;
         spriteRenderer.sortingOrder = currentHighestOrderInLayer;
+        if(player.numberCultivos == 3){
+            //game over
+            Debug.Log("Game Over");
+            GameManager.gameOver = true;
+            //Se activa el panel de fin de juego
+            endGame.instance.EndGameMoment();
+        }
     }
 
     private void Update()

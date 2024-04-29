@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
     public bool hasRolledDice = false;
     public bool hasPlayedCard = false;
 
+    public int numberCultivos = 0;
     public void Start()
     {
         foreach (var card in deck)
