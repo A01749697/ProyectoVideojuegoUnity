@@ -120,7 +120,7 @@ public class Cards : MonoBehaviour
                     break;
             }
         }
-        
+        //Si el juhador juega una carta cultivo
         if (tipoCarta == 0){
             player.numberCultivos++;
             //Hacer un siwtch sobre el color de la carta
@@ -174,7 +174,44 @@ public class Cards : MonoBehaviour
             Debug.Log("El jugador jugo una plaga");
 
         }else if (tipoCarta == 2){
-            Debug.Log("El jugador jugo un spray");
+            switch (cardColor)
+            {
+                case 0:
+                    //Si el jugador no tiene cultivos verdes disponibles, no puede jugar la carta Y se sale de la funcion
+                    //Pero si el jugador si tiene cultivos verdes disponibles, se imprime protegido
+                    if (!player.cultivosAvailable[0])
+                    {
+                        //Imprimir Informar No hay cultivo de el color del spray
+                        Debug.Log("No hay cultivo de el color del spray");
+                        return;
+                    }
+                    Debug.Log("El jugador jugo un spray verde");
+                    break;
+                case 1:
+                    if (!player.cultivosAvailable[1])
+                    {
+                        Debug.Log("No hay cultivo de el color del spray");
+                        return;
+                    }
+                    Debug.Log("El jugador jugo un spray rojo");
+                    break;
+                case 2:
+                    if (!player.cultivosAvailable[2])
+                    {
+                        Debug.Log("No hay cultivo de el color del spray");
+                        return;
+                    }
+                    Debug.Log("El jugador jugo un spray azul");
+                    break;
+                case 3:
+                    if (!player.cultivosAvailable[3])
+                    {
+                        Debug.Log("No hay cultivo de el color del spray");
+                        return;
+                    }
+                    Debug.Log("El jugador jugo un spray amarillo");
+                    break;
+            }
         }
 
         if(AudioSource != null && AudioSource.clip != null){

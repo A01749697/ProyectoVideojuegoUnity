@@ -2193,7 +2193,7 @@ MonoBehaviour:
   - {fileID: 959068488}
   - {fileID: 2043610467}
   footstepsSound: {fileID: 8300000, guid: 66b1353237f2e4a83ae6811c5486930a, type: 3}
-  moveSpeed: 2
+  moveSpeed: 8
   waypointIndex: 0
   moveAllowed: 0
 --- !u!82 &225350046
@@ -8241,7 +8241,7 @@ MonoBehaviour:
   - {fileID: 959068488}
   - {fileID: 2043610467}
   footstepsSound: {fileID: 8300000, guid: 66b1353237f2e4a83ae6811c5486930a, type: 3}
-  moveSpeed: 2
+  moveSpeed: 8
   waypointIndex: 0
   moveAllowed: 0
 --- !u!82 &758212751
@@ -12746,7 +12746,7 @@ MonoBehaviour:
   - {fileID: 959068488}
   - {fileID: 2043610467}
   footstepsSound: {fileID: 8300000, guid: 66b1353237f2e4a83ae6811c5486930a, type: 3}
-  moveSpeed: 2
+  moveSpeed: 8
   waypointIndex: 0
   moveAllowed: 0
 --- !u!82 &1145946327
@@ -19721,7 +19721,7 @@ MonoBehaviour:
   - {fileID: 959068488}
   - {fileID: 2043610467}
   footstepsSound: {fileID: 8300000, guid: 66b1353237f2e4a83ae6811c5486930a, type: 3}
-  moveSpeed: 2
+  moveSpeed: 8
   waypointIndex: 0
   moveAllowed: 0
 --- !u!82 &1826341455
@@ -20536,8 +20536,8 @@ Transform:
   m_Children:
   - {fileID: 1079608578}
   - {fileID: 1028362786}
-  - {fileID: 257882136}
   - {fileID: 584691806}
+  - {fileID: 257882136}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1992088090
