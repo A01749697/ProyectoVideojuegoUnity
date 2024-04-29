@@ -48,7 +48,6 @@ public class Dice : MonoBehaviour
             yield return new WaitForSeconds(0.05f);
         }
         GameManager.diceSideThrown=randomDiceSide+1;
-        GameManager.currentPlayer.hasRolledDice = true;
         GameManager.currentPlayer.GetComponent<Path>().moveAllowed = true;
         playerIndex = (playerIndex + 1) % 4;
     }

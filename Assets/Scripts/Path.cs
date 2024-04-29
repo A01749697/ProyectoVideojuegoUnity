@@ -54,6 +54,7 @@ public class Path : MonoBehaviour
         }
         moveAllowed = false;
         coroutineAllowed = true;
+        GameManager.currentPlayer.hasRolledDice = true;
     }
 }
 
