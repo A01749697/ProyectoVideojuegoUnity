@@ -178,38 +178,64 @@ public class Cards : MonoBehaviour
             {
                 case 0:
                     //Si el jugador no tiene cultivos verdes disponibles, no puede jugar la carta Y se sale de la funcion
+                    //Si el jugador tiene el cultivo verde completamente protegido, no puede jugar la carta Y se sale de la funcion
                     //Pero si el jugador si tiene cultivos verdes disponibles, se imprime protegido
-                    if (!player.cultivosAvailable[0])
+                    if (!player.cultivosAvailable[0] || player.cultivosProtection[0] == 2)
                     {
                         //Imprimir Informar No hay cultivo de el color del spray
-                        Debug.Log("No hay cultivo de el color del spray");
+                        Debug.Log("No hay cultivo de el color del spray o esta complemente protegido");
                         return;
                     }
-                    Debug.Log("El jugador jugo un spray verde");
+                    //Marcar que el cultivo verde se ha protegido 1 vez mas
+                    player.cultivosProtection[0]++;
+                    //Si el jugador protege el cultivo verde 2 veces, el cultivo esta complemanete protegido
+                    if (player.cultivosProtection[0] == 2)
+                    {
+                        //Imprimir Informar Cultivo verde protegido
+                        Debug.Log("Cultivo verde protegido");
+                    }
                     break;
                 case 1:
-                    if (!player.cultivosAvailable[1])
+                    if (!player.cultivosAvailable[1] || player.cultivosProtection[1] == 2)
                     {
-                        Debug.Log("No hay cultivo de el color del spray");
+                        Debug.Log("No hay cultivo de el color del spray o esta complemente protegido");
                         return;
                     }
-                    Debug.Log("El jugador jugo un spray rojo");
+                    player.cultivosProtection[1]++;
+                    //Si el jugador protege el cultivo rojo 2 veces, el cultivo esta complemanete protegido
+                    if (player.cultivosProtection[1] == 2)
+                    {
+                        //Imprimir informar cultivo rojo protegido
+                        Debug.Log("Cultivo rojo protegido");
+                    }
                     break;
                 case 2:
-                    if (!player.cultivosAvailable[2])
+                    if (!player.cultivosAvailable[2] || player.cultivosProtection[2] == 2)
                     {
-                        Debug.Log("No hay cultivo de el color del spray");
+                        Debug.Log("No hay cultivo de el color del spray o esta complemente protegido");
                         return;
                     }
-                    Debug.Log("El jugador jugo un spray azul");
+                    player.cultivosProtection[2]++;
+                    //Si el jugador protege el cultivo azul 2 veces, el cultivo esta complemanete protegido
+                    if (player.cultivosProtection[2] == 2)
+                    {
+                        //Imprimir informar cultivo azul protegido
+                        Debug.Log("Cultivo azul protegido");
+                    }
                     break;
                 case 3:
-                    if (!player.cultivosAvailable[3])
+                    if (!player.cultivosAvailable[3] || player.cultivosProtection[3] == 2)
                     {
-                        Debug.Log("No hay cultivo de el color del spray");
+                        Debug.Log("No hay cultivo de el color del spray o esta complemente protegido");
                         return;
                     }
-                    Debug.Log("El jugador jugo un spray amarillo");
+                    player.cultivosProtection[3]++;
+                    //Si el jugador protege el cultivo amarillo 2 veces, el cultivo esta complemanete protegido
+                    if (player.cultivosProtection[3] == 2)
+                    {
+                        //Imprimir informar cultivo amarillo protegido
+                        Debug.Log("Cultivo amarillo protegido");
+                    }
                     break;
             }
         }

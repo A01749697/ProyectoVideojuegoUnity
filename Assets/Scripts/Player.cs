@@ -19,6 +19,8 @@ public class Player : MonoBehaviour
 
     //crear un vector de tamaño 4 para guardar booleanos sobre cultivos
     public bool[] cultivosAvailable = new bool[4];
+    //crear un vector de tamaño 4 para guardar enteros para informacion de proteccion sobre cultivos
+    public int[] cultivosProtection = new int[4];
 
     public int numberCultivos = 0;
     public void Start()
