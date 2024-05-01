@@ -22,10 +22,12 @@ public class HudGame : MonoBehaviour
     //Hacer referencia a un elemento Panel-UI
     public GameObject panelUI;
 
-    public GameObject player1PlagueMODE;
+    //Hacer 
     public GameObject player2PlagueMODE;
     public GameObject player3PlagueMODE;
     public GameObject player4PlagueMODE;
+    public GameObject getOutButtonPLAGUE;
+
 
     private void Awake()
     {
@@ -89,14 +91,29 @@ public class HudGame : MonoBehaviour
         }
     }
 
-    //Funcion que esconde el panel de UI, y tambien a aquellos jugadores que esten
-    // en el vector(que recibe como parametro esta funcion)
-    public void HidePanelUIPlagueMode(List<int> players)
+    //Funcion que esconde el panel de UI, y tambien al resto de jugadores
+    public void HidePanelUIPlagueMode()
     {
         panelUI.SetActive(false);
         player2PlagueMODE.SetActive(false);
         player3PlagueMODE.SetActive(false);
         player4PlagueMODE.SetActive(false);
+    }
+
+    public void Player2PlagueOnCrops()
+    {
+       GameManager.instance.players[1].GetComponent<Player>().numberCultivos -= 1;
+    }
+
+    public void Player3PlagueOnCrops()
+    {
+        //restarle un cultivo al jugador 3
+        GameManager.instance.players[2].GetComponent<Player>().numberCultivos -= 1;
+    }
+
+    public void Player4PlagueOnCrops()
+    {
+        GameManager.instance.players[3].GetComponent<Player>().numberCultivos -= 1;
     }
 
 }

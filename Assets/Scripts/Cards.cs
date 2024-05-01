@@ -18,8 +18,7 @@ public class Cards : MonoBehaviour
     public int cardColor;
     public Player player;
     [SerializeField]
-    private int tipoCarta;
-    public int tipoCultivo;
+    public int tipoCarta;
     private SpriteRenderer spriteRenderer;
     private Coroutine colorChangeCoroutine;
     private AudioSource AudioSource;
@@ -170,22 +169,23 @@ public class Cards : MonoBehaviour
             }
             HudGame.instance.UpdatePlayerCultivosUI(GameManager.instance.currentPlayerIndex+1, player.numberCultivos); 
         }else if (tipoCarta == 1){
+            List<int> players = new List<int>();
             //Si el jugador juega una carta de plaga
             switch (cardColor)
             {
                 case 0:
-                    //Si no hay jugadores con cultivos verdes disponibles, no se puede jugar la carta
-                    if (ExistenJugadoresConCultivo(0)) {
-                        //Hacer una lista con el index de los jugadores que tienen cultivos verdes disponibles
-                        List<int> players = new List<int>();
-                        foreach (var playerObject in GameManager.instance.players) {
-                            Player jugador = playerObject.GetComponent<Player>();
-                            if (jugador.cultivosAvailable[0] && jugador != GameManager.instance.currentPlayer) {
-                                players.Add(jugador.playerIndex);
-                            }
+                    players.Clear();
+                    foreach (var playerObject in GameManager.instance.players) {
+                        Player jugador = playerObject.GetComponent<Player>();
+                        if (jugador.cultivosAvailable[0] && jugador != GameManager.instance.currentPlayer) {
+                            players.Add(jugador.playerIndex);
                         }
+                    }
+                    //Si no hay jugadores con cultivos verdes disponibles, no se puede jugar la carta
+                    if (players.Count > 0) {       
                         //Activar el panel de UI
                         HudGame.instance.ShowPanelUIPlagueMode(players);
+
                     }else{
                         //Imprimir Informar No hay cultivo de el color de la plaga
                         Debug.Log("No hay cultivo de el color de la plaga");
@@ -193,16 +193,15 @@ public class Cards : MonoBehaviour
                     }
                     break;
                 case 1:
-                    //Si no hay jugadores con cultivos rojos disponibles, no se puede jugar la carta
-                    if (ExistenJugadoresConCultivo(1)) {
-                        //Hacer una lista con el index de los jugadores que tienen cultivos rojos disponibles
-                        List<int> players = new List<int>();
-                        foreach (var playerObject in GameManager.instance.players) {
-                            Player jugador = playerObject.GetComponent<Player>();
-                            if (jugador.cultivosAvailable[1] && jugador != GameManager.instance.currentPlayer) {
-                                players.Add(jugador.playerIndex);
-                            }
+                    players.Clear();
+                    foreach (var playerObject in GameManager.instance.players) {
+                        Player jugador = playerObject.GetComponent<Player>();
+                        if (jugador.cultivosAvailable[1] && jugador != GameManager.instance.currentPlayer) {
+                            players.Add(jugador.playerIndex);
                         }
+                    }
+                    //Si no hay jugadores con cultivos verdes disponibles, no se puede jugar la carta
+                    if (players.Count > 0) {                
                         //Activar el panel de UI
                         HudGame.instance.ShowPanelUIPlagueMode(players);
                     }else{
@@ -212,16 +211,16 @@ public class Cards : MonoBehaviour
                     }
                     break;
                 case 2:
-                    //Si no hay jugadores con cultivos azul disponibles, no se puede jugar la carta
-                    if (ExistenJugadoresConCultivo(2)) {
-                        //Hacer una lista con el index de los jugadores que tienen cultivos azules disponibles
-                        List<int> players = new List<int>();
-                        foreach (var playerObject in GameManager.instance.players) {
-                            Player jugador = playerObject.GetComponent<Player>();
-                            if (jugador.cultivosAvailable[2] && jugador != GameManager.instance.currentPlayer) {
-                                players.Add(jugador.playerIndex);
-                            }
+                    players.Clear();
+                    foreach (var playerObject in GameManager.instance.players) {
+                        Player jugador = playerObject.GetComponent<Player>();
+                        if (jugador.cultivosAvailable[3] && jugador != GameManager.instance.currentPlayer) {
+                            players.Add(jugador.playerIndex);
                         }
+                    }
+                    //Si no hay jugadores con cultivos verdes disponibles, no se puede jugar la carta
+                    if (players.Count > 0) {
+                     
                         //Activar el panel de UI
                         HudGame.instance.ShowPanelUIPlagueMode(players);
                     }else{
@@ -231,16 +230,15 @@ public class Cards : MonoBehaviour
                     }
                     break;
                 case 3:
-                    //Si no hay jugadores con cultivos amarillos disponibles, no se puede jugar la carta
-                    if (ExistenJugadoresConCultivo(3)) {
-                        //Hacer una lista con el index de los jugadores que tienen cultivos amarillos disponibles
-                        List<int> players = new List<int>();
-                        foreach (var playerObject in GameManager.instance.players) {
-                            Player jugador = playerObject.GetComponent<Player>();
-                            if (jugador.cultivosAvailable[3] && jugador != GameManager.instance.currentPlayer) {
-                                players.Add(jugador.playerIndex);
-                            }
+                    players.Clear();
+                    foreach (var playerObject in GameManager.instance.players) {
+                        Player jugador = playerObject.GetComponent<Player>();
+                        if (jugador.cultivosAvailable[4] && jugador != GameManager.instance.currentPlayer) {
+                            players.Add(jugador.playerIndex);
                         }
+                    }
+                    //Si no hay jugadores con cultivos verdes disponibles, no se puede jugar la carta
+                    if (players.Count > 0) {
                         //Activar el panel de UI
                         HudGame.instance.ShowPanelUIPlagueMode(players);
                     }else{
@@ -374,15 +372,4 @@ public class Cards : MonoBehaviour
             }
         }
     }
-
-    bool ExistenJugadoresConCultivo(int index) {
-    foreach (var playerObject in GameManager.instance.players) {
-        Player jugador = playerObject.GetComponent<Player>();
-        if (jugador.cultivosAvailable[index] && jugador != GameManager.instance.currentPlayer) {
-            return true;
-        }
-    }
-    return false;
-    }
-
 }
