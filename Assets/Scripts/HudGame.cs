@@ -19,6 +19,14 @@ public class HudGame : MonoBehaviour
     public TMP_Text player3Cultivos;
     public TMP_Text player4Cultivos;
 
+    //Hacer referencia a un elemento Panel-UI
+    public GameObject panelUI;
+
+    public GameObject player1PlagueMODE;
+    public GameObject player2PlagueMODE;
+    public GameObject player3PlagueMODE;
+    public GameObject player4PlagueMODE;
+
     private void Awake()
     {
         if(instance == null)
@@ -57,6 +65,38 @@ public class HudGame : MonoBehaviour
         if(indexPlayer==4){
             player4Cultivos.text = numCultivos + "/4";
         }
+    }
+
+    //Funcion que hace aparecer el panel de UI, y tambien a aquellos jugadores que esten
+    // en el vector(que recibe como parametro esta funcion)
+    public void ShowPanelUIPlagueMode(List<int> players)
+    {
+        panelUI.SetActive(true);
+        foreach (var player in players)
+        {
+            if(player == 2)
+            {
+                player2PlagueMODE.SetActive(true);
+            }
+            if(player == 3)
+            {
+                player3PlagueMODE.SetActive(true);
+            }
+            if(player == 4)
+            {
+                player4PlagueMODE.SetActive(true);
+            }
+        }
+    }
+
+    //Funcion que esconde el panel de UI, y tambien a aquellos jugadores que esten
+    // en el vector(que recibe como parametro esta funcion)
+    public void HidePanelUIPlagueMode(List<int> players)
+    {
+        panelUI.SetActive(false);
+        player2PlagueMODE.SetActive(false);
+        player3PlagueMODE.SetActive(false);
+        player4PlagueMODE.SetActive(false);
     }
 
 }

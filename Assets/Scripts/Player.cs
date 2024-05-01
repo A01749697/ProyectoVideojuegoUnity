@@ -7,6 +7,8 @@ public class Player : MonoBehaviour
 {
     public List<Cards> deck = new List<Cards>();
     public Transform[] cardSlots;
+    //Player index
+    public int playerIndex;
     public bool[] availableCardSlots;
     //Jugador ha dibujado una carta
     public bool hasDrawnCard = false;

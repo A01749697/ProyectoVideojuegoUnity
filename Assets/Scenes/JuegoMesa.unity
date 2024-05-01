@@ -799,14 +799,14 @@ RectTransform:
   m_GameObject: {fileID: 119425262}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2075202368}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 186, y: 47}
+  m_AnchoredPosition: {x: -479, y: -40}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &119425264
@@ -1674,7 +1674,7 @@ GameObject:
   - component: {fileID: 168652727}
   - component: {fileID: 168652728}
   m_Layer: 0
-  m_Name: plaga-amarilla
+  m_Name: plaga-amarillo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2210,6 +2210,7 @@ MonoBehaviour:
   - {fileID: 1858879310}
   - {fileID: 1583249452}
   - {fileID: 1797568640}
+  playerIndex: 3
   availableCardSlots: 010101
   hasDrawnCard: 0
   hasThrownCard: 0
@@ -2834,14 +2835,14 @@ RectTransform:
   m_GameObject: {fileID: 253794464}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2075202368}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 178, y: -182}
+  m_AnchoredPosition: {x: 337, y: -48}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &253794466
@@ -4407,6 +4408,11 @@ MonoBehaviour:
   player2Cultivos: {fileID: 331984978}
   player3Cultivos: {fileID: 186300179}
   player4Cultivos: {fileID: 2095027324}
+  panelUI: {fileID: 2075202367}
+  player1PlagueMODE: {fileID: 0}
+  player2PlagueMODE: {fileID: 119425262}
+  player3PlagueMODE: {fileID: 929320510}
+  player4PlagueMODE: {fileID: 253794464}
 --- !u!114 &354430800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8335,6 +8341,7 @@ MonoBehaviour:
   - {fileID: 410873245}
   - {fileID: 346080456}
   - {fileID: 689026337}
+  playerIndex: 1
   availableCardSlots: 010101
   hasDrawnCard: 0
   hasThrownCard: 0
@@ -9388,7 +9395,7 @@ GameObject:
   - component: {fileID: 882675921}
   - component: {fileID: 882675922}
   m_Layer: 0
-  m_Name: plaga-amarilla
+  m_Name: plaga-amarillo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10821,14 +10828,14 @@ RectTransform:
   m_GameObject: {fileID: 929320510}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2075202368}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -73, y: -182}
+  m_AnchoredPosition: {x: -71, y: -48}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &929320512
@@ -12916,6 +12923,7 @@ MonoBehaviour:
   - {fileID: 172016166}
   - {fileID: 1904840894}
   - {fileID: 1992088091}
+  playerIndex: 2
   availableCardSlots: 010101
   hasDrawnCard: 0
   hasThrownCard: 0
@@ -14803,7 +14811,7 @@ GameObject:
   - component: {fileID: 1444290703}
   - component: {fileID: 1444290704}
   m_Layer: 0
-  m_Name: plaga-amarilla
+  m_Name: plaga-amarillo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17765,7 +17773,7 @@ GameObject:
   - component: {fileID: 1719874649}
   - component: {fileID: 1719874650}
   m_Layer: 0
-  m_Name: plaga-amarilla
+  m_Name: plaga-amarillo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19892,6 +19900,7 @@ MonoBehaviour:
   - {fileID: 2093236318}
   - {fileID: 1479583826}
   - {fileID: 1398623690}
+  playerIndex: 4
   availableCardSlots: 010101
   hasDrawnCard: 0
   hasThrownCard: 0
@@ -20285,81 +20294,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1885302796
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1885302797}
-  - component: {fileID: 1885302799}
-  - component: {fileID: 1885302798}
-  m_Layer: 5
-  m_Name: player1Plague
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &1885302797
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1885302796}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2075202368}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -83, y: 47}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1885302798
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1885302796}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: -4667784861869843768, guid: 26bd97c8057662749aa23e9f031ad8de, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1885302799
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1885302796}
-  m_CullTransparentMesh: 1
 --- !u!1 &1904840893
 GameObject:
   m_ObjectHideFlags: 0
@@ -22516,7 +22450,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1885302797}
   - {fileID: 119425263}
   - {fileID: 929320511}
   - {fileID: 253794465}
