@@ -762,6 +762,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a9aa3d33947dd942954a26c7e555034, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ladoDado:
+  - {fileID: 21300000, guid: 132dd51c1daaf884f8b215a108d4fb2b, type: 3}
+  - {fileID: 21300000, guid: 64de87716b4a1b548a8867de957f80ff, type: 3}
+  - {fileID: 21300000, guid: 65e9b276e15a3a6498ecc025b563901e, type: 3}
+  - {fileID: 21300000, guid: a6c60094848fab74f95f8287cceecc13, type: 3}
+  - {fileID: 21300000, guid: 2fba2362e7786074aa956aed29a184b2, type: 3}
+  - {fileID: 21300000, guid: 6eefde160c2ddf2459951bbf41af57e9, type: 3}
+  animDado:
+  - {fileID: 21300000, guid: d16d1d84c3a88f148b27fea3de96b050, type: 3}
+  - {fileID: 21300000, guid: 29b982dd000280a4fb363fc5e41b3fed, type: 3}
+  - {fileID: 21300000, guid: 1bcd16d487648c347a8bf84e0e216a1d, type: 3}
+  - {fileID: 21300000, guid: 3333c147e36e5d44ab886b844640cf9d, type: 3}
+  - {fileID: 21300000, guid: 2d91b52c033eb04419e845cf85f68347, type: 3}
+  - {fileID: 21300000, guid: 48735b868de577a499a7d7d2a396ec36, type: 3}
   audioSource: {fileID: 0}
 --- !u!61 &92832886
 BoxCollider2D:
