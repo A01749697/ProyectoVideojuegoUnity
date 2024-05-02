@@ -97,21 +97,28 @@ public class GameManager : MonoBehaviour
             if (TurnAnnouncement != null){
                 TurnAnnouncement.DisplayTurn(currentPlayer.name);
             }
-            //Ocult the cards of all the players which are not the current player
+            //Ocult the cards of all the players which are not the first player
             foreach (GameObject playerObject in players)
             {
                 Player player = playerObject.GetComponent<Player>();
-                foreach (Cards card in player.deck)
+                // Check if the player is player one
+                if (player == players[0].GetComponent<Player>())
                 {
-                    // If the player is not the current player, hide their cards that are in hand
-                    if (player != currentPlayer && card.cardOnHand)
+                    foreach (Cards card in player.deck)
                     {
-                        card.gameObject.SetActive(false);
+                        // If the card is in hand, make it visible
+                        if (card.cardOnHand)
+                        {
+                            card.gameObject.SetActive(true);
+                        }
                     }
-                    // Otherwise, make sure their cards in hand are visible
-                    else if (card.cardOnHand)
+                }
+                else
+                {
+                    foreach (Cards card in player.deck)
                     {
-                        card.gameObject.SetActive(true);
+                        // Hide the cards of other players
+                        card.gameObject.SetActive(false);
                     }
                 }
             }
