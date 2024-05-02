@@ -18,6 +18,8 @@ public class Player : MonoBehaviour
     public bool hasRolledDice = false;
     //Jugador ha jugado una carta
     public bool hasPlayedCard = false;
+    //Vector de 3, guardando las cartas que el jugador tiene en la mano
+    public Cards[] hand = new Cards[3];
 
     //crear un vector de tamaño 4 para guardar booleanos sobre cultivos
     public bool[] cultivosAvailable = new bool[4];

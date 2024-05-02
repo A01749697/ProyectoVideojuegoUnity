@@ -102,18 +102,45 @@ public class HudGame : MonoBehaviour
 
     public void Player2PlagueOnCrops()
     {
-       GameManager.instance.players[1].GetComponent<Player>().numberCultivos -= 1;
+        //Si el jugador 2 tiene cultivo con proteccion igual a 0 entonces se le resta un cultivo
+        if(GameManager.instance.players[1].GetComponent<Player>().cultivosProtection[GameManager.instance.lastPlagueCardPlayed.cardColor] == 0){
+            GameManager.instance.players[1].GetComponent<Player>().numberCultivos--;
+            //Cultivo NO disponoble
+            GameManager.instance.players[1].GetComponent<Player>().cultivosAvailable[GameManager.instance.lastPlagueCardPlayed.cardColor] = false;
+            //Actualizar el texto de los cultivos
+            UpdatePlayerCultivosUI(2, GameManager.instance.players[1].GetComponent<Player>().numberCultivos);
+        }else{
+            //Si el jugador 2 tiene cultivo con proteccion mayor a 0 entonces se le resta 1 a la proteccion
+            GameManager.instance.players[1].GetComponent<Player>().cultivosProtection[GameManager.instance.lastPlagueCardPlayed.cardColor] -= 1;
+        }
     }
 
     public void Player3PlagueOnCrops()
     {
-        //restarle un cultivo al jugador 3
-        GameManager.instance.players[2].GetComponent<Player>().numberCultivos -= 1;
+        //Si el jugador 3 tiene cultivo con proteccion igual a 0 entonces se le resta un cultivo
+        if(GameManager.instance.players[2].GetComponent<Player>().cultivosProtection[GameManager.instance.lastPlagueCardPlayed.cardColor] == 0){
+            GameManager.instance.players[2].GetComponent<Player>().numberCultivos--;
+            //Cultivo NO disponoble
+            GameManager.instance.players[2].GetComponent<Player>().cultivosAvailable[GameManager.instance.lastPlagueCardPlayed.cardColor] = false;
+            //Actualizar el texto de los cultivos
+            UpdatePlayerCultivosUI(3, GameManager.instance.players[2].GetComponent<Player>().numberCultivos);
+        }else{
+            //Si el jugador 3 tiene cultivo con proteccion mayor a 0 entonces se le resta 1 a la proteccion
+            GameManager.instance.players[2].GetComponent<Player>().cultivosProtection[GameManager.instance.lastPlagueCardPlayed.cardColor] -= 1;
+        }
     }
 
     public void Player4PlagueOnCrops()
     {
-        GameManager.instance.players[3].GetComponent<Player>().numberCultivos -= 1;
+        if(GameManager.instance.players[3].GetComponent<Player>().cultivosProtection[GameManager.instance.lastPlagueCardPlayed.cardColor] == 0){
+            GameManager.instance.players[3].GetComponent<Player>().numberCultivos--;
+            //Cultivo NO disponoble
+            GameManager.instance.players[3].GetComponent<Player>().cultivosAvailable[GameManager.instance.lastPlagueCardPlayed.cardColor] = false;
+            //Actualizar el texto de los cultivos
+            UpdatePlayerCultivosUI(4, GameManager.instance.players[3].GetComponent<Player>().numberCultivos);
+        }else{  
+            GameManager.instance.players[3].GetComponent<Player>().cultivosProtection[GameManager.instance.lastPlagueCardPlayed.cardColor] -= 1;
+        }
     }
 
 }

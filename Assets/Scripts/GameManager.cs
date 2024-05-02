@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     //Hacer referencia a 4 Game Objects que representan a los cultivos
     public GameObject[] cultivos;
     public  Player currentPlayer;
+    public Cards lastPlagueCardPlayed;
     public  bool modoTirarCarta = false;
     public int currentPlayerIndex = 0;
     public int diceSideThrown = 0;
@@ -54,6 +55,8 @@ public class GameManager : MonoBehaviour
                 break;
             }
         }
+        //Actulizar la mano del jugador
+        currentPlayer.hand[randCard.handIndex] = randCard;
         currentPlayer.hasDrawnCard = true;
     }
 

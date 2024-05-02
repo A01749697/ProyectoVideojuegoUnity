@@ -80,6 +80,8 @@ public class Cards : MonoBehaviour
             transform.position = new Vector3(12f, -1.75f, 0);
             cardOnHand = false;
             GameManager.instance.modoTirarCarta = false;
+            //Actualizar la mano del jugador
+            player.hand[handIndex] = null;
             return;
         }
         if (player.hasPlayedCard || player.hasThrownCard)
@@ -127,21 +129,21 @@ public class Cards : MonoBehaviour
                 case 0:
                     player.cultivosAvailable[0] = true;
                     //Console Log
-                    Debug.Log("El jugador ya jugo una carta de cultivo verde");
+                    Debug.Log("El jugador jugo una carta de cultivo verde");
                     break;
                 case 1:
                     //Console Log
-                    Debug.Log("El jugador ya jugo una carta de cultivo rojo");
+                    Debug.Log("El jugador jugo una carta de cultivo rojo");
                     player.cultivosAvailable[1] = true;
                     break;
                 case 2:
                     //Console Log
-                    Debug.Log("El jugador ya jugo una carta de cultivo azul");
+                    Debug.Log("El jugador jugo una carta de cultivo azul");
                     player.cultivosAvailable[2] = true;
                     break;
                 case 3:
                     //Console Log
-                    Debug.Log("El jugador ya jugo una carta de cultivo amarillo");
+                    Debug.Log("El jugador jugo una carta de cultivo amarillo");
                     player.cultivosAvailable[3] = true;
                     break;
             }
@@ -169,6 +171,7 @@ public class Cards : MonoBehaviour
             }
             HudGame.instance.UpdatePlayerCultivosUI(GameManager.instance.currentPlayerIndex+1, player.numberCultivos); 
         }else if (tipoCarta == 1){
+            GameManager.instance.lastPlagueCardPlayed = this;
             List<int> players = new List<int>();
             //Si el jugador juega una carta de plaga
             switch (cardColor)
@@ -177,8 +180,12 @@ public class Cards : MonoBehaviour
                     players.Clear();
                     foreach (var playerObject in GameManager.instance.players) {
                         Player jugador = playerObject.GetComponent<Player>();
-                        if (jugador.cultivosAvailable[0] && jugador != GameManager.instance.currentPlayer) {
-                            players.Add(jugador.playerIndex);
+                        //Si el jugador tiene su cultivo protegido 2 veces, no añadirlo a la lista de jugadores
+
+                        if (jugador.cultivosAvailable[0] && jugador != GameManager.instance.currentPlayer && jugador != GameManager.instance.players[0].GetComponent<Player>()) {
+                            if(jugador.cultivosProtection[0] != 2){
+                                players.Add(jugador.playerIndex);
+                            }
                         }
                     }
                     //Si no hay jugadores con cultivos verdes disponibles, no se puede jugar la carta
@@ -196,8 +203,10 @@ public class Cards : MonoBehaviour
                     players.Clear();
                     foreach (var playerObject in GameManager.instance.players) {
                         Player jugador = playerObject.GetComponent<Player>();
-                        if (jugador.cultivosAvailable[1] && jugador != GameManager.instance.currentPlayer) {
-                            players.Add(jugador.playerIndex);
+                        if (jugador.cultivosAvailable[1] && jugador != GameManager.instance.currentPlayer && jugador != GameManager.instance.players[0].GetComponent<Player>()) {
+                            if(jugador.cultivosProtection[1] != 2){
+                                players.Add(jugador.playerIndex);
+                            }
                         }
                     }
                     //Si no hay jugadores con cultivos verdes disponibles, no se puede jugar la carta
@@ -214,8 +223,11 @@ public class Cards : MonoBehaviour
                     players.Clear();
                     foreach (var playerObject in GameManager.instance.players) {
                         Player jugador = playerObject.GetComponent<Player>();
-                        if (jugador.cultivosAvailable[3] && jugador != GameManager.instance.currentPlayer) {
-                            players.Add(jugador.playerIndex);
+                        
+                        if (jugador.cultivosAvailable[2] && jugador != GameManager.instance.currentPlayer && jugador != GameManager.instance.players[0].GetComponent<Player>()) {
+                            if(jugador.cultivosProtection[2] != 2){
+                                players.Add(jugador.playerIndex);
+                            }
                         }
                     }
                     //Si no hay jugadores con cultivos verdes disponibles, no se puede jugar la carta
@@ -233,8 +245,10 @@ public class Cards : MonoBehaviour
                     players.Clear();
                     foreach (var playerObject in GameManager.instance.players) {
                         Player jugador = playerObject.GetComponent<Player>();
-                        if (jugador.cultivosAvailable[4] && jugador != GameManager.instance.currentPlayer) {
-                            players.Add(jugador.playerIndex);
+                        if (jugador.cultivosAvailable[3] && jugador != GameManager.instance.currentPlayer && jugador != GameManager.instance.players[0].GetComponent<Player>()) {
+                            if(jugador.cultivosProtection[3] != 2){
+                                players.Add(jugador.playerIndex);
+                            }
                         }
                     }
                     //Si no hay jugadores con cultivos verdes disponibles, no se puede jugar la carta
