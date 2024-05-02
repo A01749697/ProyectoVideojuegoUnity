@@ -47,7 +47,22 @@ public class Dice : MonoBehaviour
             spriteRenderer.sprite = ladoDado[randomDiceSide];
             yield return new WaitForSeconds(0.05f);
         }
+
         GameManager.instance.diceSideThrown=randomDiceSide+1;
+
+        //If currentplayer.finanzePlayer == 2, add 2 to the diceSideThrown
+        if(GameManager.instance.players[GameManager.instance.currentPlayerIndex].GetComponent<Player>().finanzePlayer == 2){
+            GameManager.instance.diceSideThrown += 2;
+        }
+        //If currentplayer.finanzePlayer == 1, add 1 to the diceSideThrown
+        else if(GameManager.instance.players[GameManager.instance.currentPlayerIndex].GetComponent<Player>().finanzePlayer == 1){
+            GameManager.instance.diceSideThrown += 1;
+        }
+        //If currentplayer.finanzePlayer == 0, Make a random number between -2 and 2 and add it to the diceSideThrown
+        else if(GameManager.instance.players[GameManager.instance.currentPlayerIndex].GetComponent<Player>().finanzePlayer == 0){
+            GameManager.instance.diceSideThrown += Random.Range(-2, 3);
+        }
+
         GameManager.instance.currentPlayer.GetComponent<Path>().moveAllowed = true;
         playerIndex = (playerIndex + 1) % 4;
     }

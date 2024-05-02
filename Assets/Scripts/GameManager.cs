@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     public  bool modoTirarCarta = false;
     public int currentPlayerIndex = 0;
     public int diceSideThrown = 0;
+    public bool finanzeChosen;
     public bool gameOver = false;
     public TurnAnnouncement TurnAnnouncement;
     public void TirarCarta(){
@@ -61,13 +62,15 @@ public class GameManager : MonoBehaviour
         currentPlayer.hasDrawnCard = true;
     }
 
-    public void Start()
+    public IEnumerator Start()
     {
         players = new GameObject[4];
         players[0] = GameObject.Find("Player1");
         players[1] = GameObject.Find("Player2");
         players[2] = GameObject.Find("Player3");
         players[3] = GameObject.Find("Player4");
+
+        yield return StartCoroutine(PickFinance());
 
         foreach (GameObject playerObject in players)
         {
@@ -80,6 +83,13 @@ public class GameManager : MonoBehaviour
         }
 
         StartCoroutine(PlayerTurns());
+    }
+
+    IEnumerator PickFinance(){
+        while (!finanzeChosen)
+        {
+            yield return null;
+        }
     }
 
     IEnumerator PlayerTurns()
