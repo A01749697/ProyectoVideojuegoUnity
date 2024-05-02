@@ -36,7 +36,7 @@ public class Dice : MonoBehaviour
         if(!GameManager.instance.gameOver && GameManager.instance.currentPlayerIndex == playerIndex) StartCoroutine("RollTheDice");
     }
 
-    private IEnumerator RollTheDice()
+    public IEnumerator RollTheDice()
     {
         int randomDiceSide = 0;
         audioSource.Play(); //

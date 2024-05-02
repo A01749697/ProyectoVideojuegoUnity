@@ -97,24 +97,28 @@ public class Cards : MonoBehaviour
                 case 0:
                     if (player.cultivosAvailable[0])
                     {
+                        Debug.Log("El jugador YA TIENE cultivo verde");
                         return;
                     }
                     break;
                 case 1:
                     if (player.cultivosAvailable[1])
                     {
+                        Debug.Log("El jugador YA TIENE cultivo rojo");
                         return;
                     }
                     break;
                 case 2:
                     if (player.cultivosAvailable[2])
                     {
+                        Debug.Log("El jugador YA TIENE cultivo azul");
                         return;
                     }
                     break;
                 case 3:
                     if (player.cultivosAvailable[3])
                     {
+                        Debug.Log("El jugador YA TIENE cultivo amarillo");
                         return;
                     }
                     break;
@@ -277,6 +281,7 @@ public class Cards : MonoBehaviour
                     }
                     //Marcar que el cultivo verde se ha protegido 1 vez mas
                     player.cultivosProtection[0]++;
+                    Debug.Log("Cultivo verde protegido 1 vez");
                     //Si el jugador protege el cultivo verde 2 veces, el cultivo esta complemanete protegido
                     if (player.cultivosProtection[0] == 2)
                     {
@@ -291,6 +296,7 @@ public class Cards : MonoBehaviour
                         return;
                     }
                     player.cultivosProtection[1]++;
+                    Debug.Log("Cultivo rojo protegido 1 vez");
                     //Si el jugador protege el cultivo rojo 2 veces, el cultivo esta complemanete protegido
                     if (player.cultivosProtection[1] == 2)
                     {
@@ -305,6 +311,7 @@ public class Cards : MonoBehaviour
                         return;
                     }
                     player.cultivosProtection[2]++;
+                    Debug.Log("Cultivo azul protegido 1 vez");
                     //Si el jugador protege el cultivo azul 2 veces, el cultivo esta complemanete protegido
                     if (player.cultivosProtection[2] == 2)
                     {
@@ -319,6 +326,7 @@ public class Cards : MonoBehaviour
                         return;
                     }
                     player.cultivosProtection[3]++;
+                    Debug.Log("Cultivo amarillo protegido 1 vez");
                     //Si el jugador protege el cultivo amarillo 2 veces, el cultivo esta complemanete protegido
                     if (player.cultivosProtection[3] == 2)
                     {
