@@ -4421,6 +4421,7 @@ MonoBehaviour:
   endGameUI: {fileID: 1522289355}
   buttonMenu: {fileID: 676399228}
   botonesUI: {fileID: 238451169}
+  goVerqorBootton: {fileID: 1548997044}
   menuPausa: {fileID: 1536018484}
   panelesUI: {fileID: 804674300}
 --- !u!114 &354430801
@@ -15965,7 +15966,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1522289356
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16485,7 +16486,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1548997047}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 354430800}
+        m_TargetAssemblyTypeName: endGame, Assembly-CSharp
+        m_MethodName: verqorSiteWeb
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1548997047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23666,7 +23679,6 @@ GameObject:
   - component: {fileID: 2118624789}
   - component: {fileID: 2118624791}
   - component: {fileID: 2118624790}
-  - component: {fileID: 2118624792}
   m_Layer: 5
   m_Name: CardPanel
   m_TagString: Untagged
@@ -23732,18 +23744,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2118624788}
   m_CullTransparentMesh: 1
---- !u!114 &2118624792
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2118624788}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99511c8680a3940c8b8d4f24bd0e6b9e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2119081538
 GameObject:
   m_ObjectHideFlags: 0

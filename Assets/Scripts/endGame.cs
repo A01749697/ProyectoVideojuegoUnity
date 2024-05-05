@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Networking;
 public class endGame : MonoBehaviour
 {
     //hacer referencia a un objeto UI
@@ -9,6 +9,7 @@ public class endGame : MonoBehaviour
     //Hacer referencia a un boton
     public GameObject buttonMenu;
     public GameObject botonesUI;
+    public GameObject goVerqorBootton;
 
     public static endGame instance;
     public GameObject menuPausa;
@@ -32,6 +33,21 @@ public class endGame : MonoBehaviour
     public void BackMenu()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+    }
+
+    public void goVerqorWebsite()
+    {
+        StartCoroutine(verqorSiteWeb());
+    }
+    IEnumerator verqorSiteWeb(){
+        UnityWebRequest request = UnityWebRequest.Get("/indexGAMe.html");
+        yield return request.SendWebRequest();
+        if (request.result == UnityWebRequest.Result.Success) {
+            string respuesta = request.downloadHandler.text;
+            print("Respuesta: " + respuesta);
+        } else {
+            print("Error: " + request.error);
+        }
     }
 
     private void Awake()
