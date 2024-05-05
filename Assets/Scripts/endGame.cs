@@ -40,7 +40,7 @@ public class endGame : MonoBehaviour
         StartCoroutine(verqorSiteWeb());
     }
     IEnumerator verqorSiteWeb(){
-        UnityWebRequest request = UnityWebRequest.Get("/indexGAMe.html");
+        UnityWebRequest request = UnityWebRequest.Get("http://localhost:4000/indexGAMe.html");
         yield return request.SendWebRequest();
         if (request.result == UnityWebRequest.Result.Success) {
             string respuesta = request.downloadHandler.text;
