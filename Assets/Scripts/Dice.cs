@@ -33,9 +33,9 @@ public class Dice : MonoBehaviour
         audioSource.Play(); //
         for(int i = 0; i <= 10; i++){
             randomDiceSide = Random.Range(0, 6);
-            spriteRenderer.sprite = animDado[randomDiceSide];
-            yield return new WaitForSeconds(0.1f);
             spriteRenderer.sprite = ladoDado[randomDiceSide];
+            yield return new WaitForSeconds(0.1f);
+            spriteRenderer.sprite = animDado[randomDiceSide];
             yield return new WaitForSeconds(0.05f);
         }
 
